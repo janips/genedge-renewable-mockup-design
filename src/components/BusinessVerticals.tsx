@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Sun, Wind, Battery, Users, Settings, Tool, ArrowRight } from 'lucide-react';
+import { Sun, Wind, Battery, Users, Settings, Wrench, ArrowRight } from 'lucide-react';
 
 const BusinessVerticals: React.FC = () => {
   const [activeTab, setActiveTab] = useState("kusum");
@@ -45,7 +45,7 @@ const BusinessVerticals: React.FC = () => {
     },
     {
       id: "epc",
-      icon: <Tool className="h-6 w-6" />,
+      icon: <Wrench className="h-6 w-6" />,
       title: "EPC Business",
       subtitle: "Building Excellence in Renewable Infrastructure",
       description: "Our engineering, procurement, and construction services deliver turnkey renewable energy projects with precision engineering, quality components, and professional installation.",
