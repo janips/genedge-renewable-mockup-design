@@ -10,10 +10,10 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="h-10 w-10 rounded-full bg-gradient-to-r from-genedge-green to-genedge-orange flex items-center justify-center text-white font-bold text-xl">G</div>
+            <Link to="/" className="flex items-center space-x-2 mb-4">
+              <img src="/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png" alt="Genedge Logo" className="h-10 w-auto" />
               <span className="font-bold text-xl text-white">Genedge</span>
-            </div>
+            </Link>
             <p className="text-gray-300 mb-4">
               Powering India's Future with Clean Energy. We are dedicated to harnessing renewable resources to meet the growing energy demands in India.
             </p>
@@ -50,12 +50,12 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 border-l-4 border-genedge-orange pl-3">Our Solutions</h3>
             <ul className="space-y-2">
-              <li><Link to="/businesses#kusum" className="text-gray-300 hover:text-genedge-orange transition-colors">PM Kusum Projects</Link></li>
-              <li><Link to="/businesses#utility" className="text-gray-300 hover:text-genedge-orange transition-colors">Utility Scale Projects</Link></li>
-              <li><Link to="/businesses#commercial" className="text-gray-300 hover:text-genedge-orange transition-colors">C&I Solutions</Link></li>
-              <li><Link to="/businesses#bess" className="text-gray-300 hover:text-genedge-orange transition-colors">Battery Energy Storage</Link></li>
-              <li><Link to="/businesses#epc" className="text-gray-300 hover:text-genedge-orange transition-colors">EPC Business</Link></li>
-              <li><Link to="/businesses#om" className="text-gray-300 hover:text-genedge-orange transition-colors">O&M Business</Link></li>
+              <li><Link to="/businesses/kusum" className="text-gray-300 hover:text-genedge-orange transition-colors">PM Kusum Projects</Link></li>
+              <li><Link to="/businesses/utility" className="text-gray-300 hover:text-genedge-orange transition-colors">Utility Scale Projects</Link></li>
+              <li><Link to="/businesses/commercial" className="text-gray-300 hover:text-genedge-orange transition-colors">C&I Solutions</Link></li>
+              <li><Link to="/businesses/bess" className="text-gray-300 hover:text-genedge-orange transition-colors">Battery Energy Storage</Link></li>
+              <li><Link to="/businesses/epc" className="text-gray-300 hover:text-genedge-orange transition-colors">EPC Business</Link></li>
+              <li><Link to="/businesses/om" className="text-gray-300 hover:text-genedge-orange transition-colors">O&M Business</Link></li>
             </ul>
           </div>
 

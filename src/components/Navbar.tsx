@@ -39,31 +39,31 @@ const Navbar: React.FC = () => {
       title: "About Us", 
       path: "/about",
       submenu: [
-        { title: "Company Overview", path: "/about#company" },
-        { title: "Management Team", path: "/about#team" },
-        { title: "Parent Company", path: "/about#parent" }
+        { title: "Company Overview", path: "/about" },
+        { title: "Management Team", path: "/about/team" },
+        { title: "Parent Company", path: "/about/parent" }
       ]
     },
     { 
       title: "Renewable Sector", 
       path: "/renewable-sector",
       submenu: [
-        { title: "Key Policies", path: "/renewable-sector#policies" },
-        { title: "Capacity Growth", path: "/renewable-sector#capacity" },
-        { title: "Government Targets", path: "/renewable-sector#targets" },
-        { title: "Development Process", path: "/renewable-sector#process" }
+        { title: "Key Policies", path: "/renewable-sector/policies" },
+        { title: "Capacity Growth", path: "/renewable-sector/capacity" },
+        { title: "Government Targets", path: "/renewable-sector/targets" },
+        { title: "Development Process", path: "/renewable-sector/process" }
       ]
     },
     { 
       title: "Our Businesses", 
       path: "/businesses",
       submenu: [
-        { title: "PM Kusum Projects", path: "/businesses#kusum" },
-        { title: "Utility Scale Projects", path: "/businesses#utility" },
-        { title: "C&I Solutions", path: "/businesses#commercial" },
-        { title: "BESS", path: "/businesses#bess" },
-        { title: "EPC", path: "/businesses#epc" },
-        { title: "O&M", path: "/businesses#om" }
+        { title: "PM Kusum Projects", path: "/businesses/kusum" },
+        { title: "Utility Scale Projects", path: "/businesses/utility" },
+        { title: "C&I Solutions", path: "/businesses/commercial" },
+        { title: "BESS", path: "/businesses/bess" },
+        { title: "EPC", path: "/businesses/epc" },
+        { title: "O&M", path: "/businesses/om" }
       ]
     },
     { title: "Projects", path: "/projects" },
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <div className="flex items-center space-x-2">
-              <div className="h-10 w-10 rounded-full bg-gradient-to-r from-genedge-green to-genedge-orange flex items-center justify-center text-white font-bold text-xl">G</div>
+              <img src="/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png" alt="Genedge Logo" className="h-12 w-auto" />
               <span className={`font-bold text-xl ${scrolled ? "text-genedge-dark-gray" : "text-white"}`}>Genedge</span>
             </div>
           </Link>
