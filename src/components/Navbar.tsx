@@ -40,39 +40,52 @@ const Navbar: React.FC = () => {
       title: "About Us", 
       path: "/about",
       submenu: [
-        { title: "Company Overview", path: "/about" },
+        { title: "About the Company", path: "/about" },
+        { title: "Company's Vision & Mission", path: "/about/vision-mission" },
+        { title: "Who Are We", path: "/about/who-we-are" },
+        { title: "What We Do", path: "/about/what-we-do" },
         { title: "Management Team", path: "/about/team" },
         { title: "Parent Company", path: "/about/parent" }
       ]
     },
     { 
-      title: "Renewable Sector", 
+      title: "Renewable Sector in India", 
       path: "/renewable-sector",
       submenu: [
-        { title: "Key Policies", path: "/renewable-sector/policies" },
-        { title: "Capacity Growth", path: "/renewable-sector/capacity" },
-        { title: "Government Targets", path: "/renewable-sector/targets" },
-        { title: "Development Process", path: "/renewable-sector/process" }
+        { title: "Key Policies & Regulations", path: "/renewable-sector/policies" },
+        { title: "Capacity Addition Over the Last 10 Years", path: "/renewable-sector/capacity" },
+        { title: "Targets by the Government", path: "/renewable-sector/targets" }
       ]
     },
     { 
       title: "Our Businesses", 
       path: "/businesses",
       submenu: [
+        { title: "Introduction – Strategic Approach", path: "/businesses" },
         { title: "PM Kusum Projects", path: "/businesses/kusum" },
-        { title: "Utility Scale Projects", path: "/businesses/utility" },
-        { title: "C&I Solutions", path: "/businesses/commercial" },
-        { title: "BESS", path: "/businesses/bess" },
-        { title: "EPC", path: "/businesses/epc" },
-        { title: "O&M", path: "/businesses/om" }
+        { title: "Large Utility-Scale Projects", path: "/businesses/utility" },
+        { title: "C&I Projects", path: "/businesses/commercial" },
+        { title: "Battery Energy Storage Systems (BESS)", path: "/businesses/bess" },
+        { title: "EPC Business", path: "/businesses/epc" },
+        { title: "O&M Business", path: "/businesses/om" }
       ]
     },
-    { title: "Projects", path: "/projects" },
-    { title: "Careers", path: "/careers" }
+    { 
+      title: "Projects", 
+      path: "/projects",
+      submenu: [
+        { title: "Existing Project Portfolio", path: "/projects" },
+        { title: "Project Map", path: "/projects/map" }
+      ]
+    },
+    { title: "Corporate Governance", path: "/corporate-governance" },
+    { title: "Gallery", path: "/gallery" },
+    { title: "Careers", path: "/careers" },
+    { title: "Get in Touch", path: "/contact" }
   ];
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white shadow-md py-2">
+    <nav className="fixed w-full top-10 z-50 bg-white shadow-md py-2">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
@@ -96,7 +109,7 @@ const Navbar: React.FC = () => {
 
                 {link.submenu && (
                   <div 
-                    className={`absolute left-0 mt-0 w-48 bg-white rounded-md shadow-lg z-50 transition-all duration-200 transform origin-top-left ${
+                    className={`absolute left-0 mt-0 w-64 bg-white rounded-md shadow-lg z-50 transition-all duration-200 transform origin-top-left ${
                       activeDropdown === link.title ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
                     }`}
                   >

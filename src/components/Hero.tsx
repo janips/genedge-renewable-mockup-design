@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative min-h-screen flex items-center bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}>
+    <div className="relative min-h-screen flex items-center bg-cover bg-center -mt-28 pt-28" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}>
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl animate-fade-in">

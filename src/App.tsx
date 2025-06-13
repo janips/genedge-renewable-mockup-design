@@ -8,6 +8,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Pages
 import Index from "./pages/Index";
 import About from "./pages/About";
+import VisionMission from "./pages/VisionMission";
+import WhoWeAre from "./pages/WhoWeAre";
+import WhatWeDo from "./pages/WhatWeDo";
 import AboutTeam from "./pages/AboutTeam";
 import AboutParent from "./pages/AboutParent";
 import RenewableSector from "./pages/RenewableSector";
@@ -23,6 +26,9 @@ import BusinessBess from "./pages/BusinessBess";
 import BusinessEPC from "./pages/BusinessEPC";
 import BusinessOM from "./pages/BusinessOM";
 import Projects from "./pages/Projects";
+import ProjectMap from "./pages/ProjectMap";
+import CorporateGovernance from "./pages/CorporateGovernance";
+import Gallery from "./pages/Gallery";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -40,6 +46,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about/vision-mission" element={<VisionMission />} />
+          <Route path="/about/who-we-are" element={<WhoWeAre />} />
+          <Route path="/about/what-we-do" element={<WhatWeDo />} />
           <Route path="/about/team" element={<AboutTeam />} />
           <Route path="/about/parent" element={<AboutParent />} />
           <Route path="/renewable-sector" element={<RenewableSector />} />
@@ -55,6 +64,9 @@ const App = () => (
           <Route path="/businesses/epc" element={<BusinessEPC />} />
           <Route path="/businesses/om" element={<BusinessOM />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/map" element={<ProjectMap />} />
+          <Route path="/corporate-governance" element={<CorporateGovernance />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
