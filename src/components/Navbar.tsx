@@ -34,17 +34,6 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Determine if we're on the homepage
-  const isHomePage = location.pathname === '/';
-
-  // Text color logic: Use white on homepage hero, black elsewhere
-  const getTextColor = () => {
-    if (isHomePage && !scrolled) {
-      return "text-white";
-    }
-    return "text-gray-700"; // Use dark text color on all other pages
-  };
-
   const navLinks: NavLinkType[] = [
     { title: "Home", path: "/" },
     { 
@@ -79,18 +68,17 @@ const Navbar: React.FC = () => {
       ]
     },
     { title: "Projects", path: "/projects" },
-    { title: "Careers", path: "/careers" },
-    { title: "Contact", path: "/contact" }
+    { title: "Careers", path: "/careers" }
   ];
 
   return (
-    <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled || !isHomePage ? "bg-white shadow-md py-2" : "bg-transparent py-4"}`}>
+    <nav className="fixed w-full top-0 z-50 bg-white shadow-md py-2">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <div className="flex items-center space-x-2">
               <img src="/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png" alt="Genedge Logo" className="h-12 w-auto" />
-              <span className={`font-bold text-xl ${scrolled || !isHomePage ? "text-genedge-dark-gray" : "text-white"}`}>Genedge</span>
+              <span className="font-bold text-xl text-genedge-dark-gray">Genedge</span>
             </div>
           </Link>
 
@@ -100,7 +88,7 @@ const Navbar: React.FC = () => {
               <div key={link.title} className="relative group">
                 <button 
                   onClick={() => link.submenu && handleDropdown(link.title)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium flex items-center hover:text-genedge-green transition-colors ${getTextColor()} ${activeDropdown === link.title ? "text-genedge-green" : ""}`}
+                  className={`px-3 py-2 rounded-md text-sm font-medium flex items-center hover:text-genedge-green transition-colors text-gray-700 ${activeDropdown === link.title ? "text-genedge-green" : ""}`}
                 >
                   {link.title}
                   {link.submenu && <ChevronDown className="ml-1 h-4 w-4" />}
@@ -128,15 +116,11 @@ const Navbar: React.FC = () => {
                 )}
               </div>
             ))}
-            
-            <Link to="/contact" className="ml-4 px-4 py-2 text-sm font-medium text-white bg-genedge-green hover:bg-opacity-90 rounded transition-colors">
-              Get in Touch
-            </Link>
           </div>
 
           {/* Mobile Navigation Button */}
           <div className="md:hidden">
-            <button onClick={toggleNav} className={`p-2 focus:outline-none ${scrolled || !isHomePage ? "text-gray-700" : "text-white"}`}>
+            <button onClick={toggleNav} className="p-2 focus:outline-none text-gray-700">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -181,15 +165,6 @@ const Navbar: React.FC = () => {
               )}
             </div>
           ))}
-          <div className="pt-2">
-            <Link 
-              to="/contact" 
-              className="block w-full px-4 py-2 text-center text-white bg-genedge-green hover:bg-opacity-90 rounded transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Get in Touch
-            </Link>
-          </div>
         </div>
       </div>
     </nav>
