@@ -1,12 +1,9 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
-
 const About = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-0">
           <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
           
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
@@ -29,10 +26,11 @@ const About = () => {
             </p>
             
             <h2 className="text-2xl font-semibold mb-4">Company's Vision & Mission</h2>
-            <div className="mb-8 p-6 bg-gray-50 rounded-lg border-l-4 border-genedge-green">
-              <p className="italic text-gray-700">
-                To be aligned with the HR Manual
-              </p>
+            <div className="mb-8 p-6 p-6 border-yellow-50 px-0 py-0 bg-white rounded-none ">
+              <p className="not-italic px-0 ">Vision: To be a significant contributor in the national transition towards a sustainable future, driven by renewable energy solutions, for the generations to come. 
+
+
+Mission: Nurture a dynamic and agile team, build internal processes, develop strong relationships with stakeholders based on the foundation of mutual respect, transparency and growth, to scale up the project pipeline of diversified renewable energy projects to 1 GW by end of 2027.</p>
             </div>
             
             <h2 className="text-2xl font-semibold mb-4">Who are we</h2>
@@ -48,14 +46,13 @@ const About = () => {
               <li className="mb-2">Wind Energy Projects (Utility Scale)</li>
               <li className="mb-2">Stand Alone Battery Energy Storage Systems (BESS) (Utility Scale)</li>
               <li className="mb-2">Hybrid Energy Projects (C&I and Utility Projects)</li>
-              <li className="mb-2">Customized EPC Service</li>
-              <li className="mb-2">Sustainability Consulting & Clean Energy Advisory</li>
+              <li className="mb-2">Tailormade EPC Service</li>
+              <li className="mb-2">
+            </li>
             </ul>
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
