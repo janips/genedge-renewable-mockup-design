@@ -11,7 +11,11 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img src="/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png" alt="Logo" className="h-10 w-auto" />
+              <img
+                src="/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png"
+                alt="Logo"
+                className="h-16 w-auto md:h-20" // Increased from h-10 to h-16 on mobile and h-20 on md
+              />
             </Link>
             <p className="text-genedge-dark-gray mb-4 text-sm">
               Empowering India through Clean Energy
