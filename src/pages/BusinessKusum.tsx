@@ -1,11 +1,8 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import { Sun } from 'lucide-react';
-
 const BusinessKusum = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-2">PM Kusum Projects</h1>
@@ -65,23 +62,22 @@ const BusinessKusum = () => {
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="p-4 bg-white rounded shadow-sm">
                   <h4 className="font-medium text-genedge-orange">Gujarat</h4>
-                  <p className="text-gray-700">Implementation details...</p>
+                  <p className="text-gray-700">.</p>
                 </div>
                 <div className="p-4 bg-white rounded shadow-sm">
                   <h4 className="font-medium text-genedge-orange">Rajasthan</h4>
-                  <p className="text-gray-700">Implementation details...</p>
+                  <p className="text-gray-700">.</p>
                 </div>
                 <div className="p-4 bg-white rounded shadow-sm">
                   <h4 className="font-medium text-genedge-orange">Madhya Pradesh</h4>
-                  <p className="text-gray-700">Implementation details...</p>
+                  <p className="text-gray-700">
+                </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default BusinessKusum;
