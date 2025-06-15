@@ -1,8 +1,12 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 const Footer: React.FC = () => {
-  return <footer className="bg-white text-genedge-dark-gray pt-16 pb-8">
+  return (
+    <footer className="bg-white text-genedge-dark-gray pt-16 pb-8">
+      {/* Divider line at top of footer */}
+      <hr className="border-t border-genedge-light-gray mb-8" />
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -80,6 +84,7 @@ Ambali Road, Ashok Vatika, Ahmedabad.</span>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
 export default Footer;
