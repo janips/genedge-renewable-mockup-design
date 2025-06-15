@@ -208,11 +208,7 @@ const Projects = () => {
           
           <div className="max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-md mb-10">
-              <p className="text-gray-700 mb-6">
-                At Genedge Renewables, we have successfully implemented a diverse portfolio of renewable energy 
-                projects across India. Our project experience spans utility-scale installations, agricultural 
-                solar projects, commercial & industrial solutions, and integrated energy systems.
-              </p>
+              <p className="text-gray-700 mb-6">At Genedge Renewables, We’re already making a measurable impact. Our early projects reflect our commitment to accessible, reliable, and sustainable energy. Each project is a step toward a cleaner, more resilient energy future—and a proof of concept for what we’re building at scale.</p>
               
               
             </div>
