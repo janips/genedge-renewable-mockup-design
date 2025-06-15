@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-// Filtered user-uploaded images (excluding logo images)
+// Only the first 6 user-uploaded images (excluding any logo images)
 const uploadedImages = [
   {
     src: "/lovable-uploads/36feefda-9010-4332-ad14-e26b34075e95.png",
@@ -27,32 +27,7 @@ const uploadedImages = [
   {
     src: "/lovable-uploads/01d55dc9-543b-41af-8af2-6b0ae3e4fc4d.png",
     alt: "Team at PM-KUSUM project sign"
-  },
-  {
-    src: "/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png",
-    alt: "Control room with electrical panels"
-  },
-  // Do NOT include: "/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png" (used as logo)
-  {
-    src: "/lovable-uploads/photo-1500673922987-e212871fec22.jpg",
-    alt: "Solar field landscape with yellow lights"
-  },
-  {
-    src: "/lovable-uploads/photo-1470071459604-3b5ec3a7fe05.jpg",
-    alt: "Foggy mountain summit with distant view (placeholder)"
-  },
-  {
-    src: "/lovable-uploads/photo-1506744038136-46273834b3fb.jpg",
-    alt: "Body of water surrounded by trees (placeholder)"
-  },
-  {
-    src: "/lovable-uploads/photo-1615729947596-a598e5de0ab3.jpg",
-    alt: "Green grass and gray rocky mountain (placeholder)"
-  },
-  {
-    src: "/lovable-uploads/photo-1487887235947-a955ef187fcc.jpg",
-    alt: "White DJI drone in mid air (placeholder)"
-  },
+  }
 ];
 
 const Gallery = () => {
@@ -94,3 +69,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
