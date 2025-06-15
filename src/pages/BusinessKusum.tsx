@@ -58,7 +58,7 @@ const BusinessKusum = () => {
             </ul>
             
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Current Implementation Areas</h3>
+              <h3 className="text-xl font-semibold mb-3">Current Implementation Areas:</h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="p-4 bg-white rounded shadow-sm">
                   <h4 className="font-medium text-genedge-orange">Gujarat</h4>
