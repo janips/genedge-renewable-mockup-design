@@ -1,4 +1,3 @@
-
 import { NavLinkType } from '../types/navigation';
 
 export const navLinks: NavLinkType[] = [
@@ -7,8 +6,8 @@ export const navLinks: NavLinkType[] = [
     title: "About Us", 
     path: "/about",
     submenu: [
-      { title: "About the Company", path: "/about" },
-      { title: "Company's Vision & Mission", path: "/about/vision-mission" },
+      { title: "Company", path: "/about" },
+      { title: "Vision & Mission", path: "/about/vision-mission" },
       { title: "Who Are We", path: "/about/who-we-are" },
       { title: "What We Do", path: "/about/what-we-do" },
       { title: "Management Team", path: "/about/team" },
