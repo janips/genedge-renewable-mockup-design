@@ -1,15 +1,16 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import { Wrench, PenTool, ShoppingCart, Hammer, Share2, ShieldCheck } from 'lucide-react';
-
 const BusinessEPC = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-2">EPC Business</h1>
-          <p className="text-xl text-center text-genedge-orange mb-8">At Genedge Renewables, our EPC (Engineering, Procurement, and Construction) services are designed to deliver comprehensive, end-to-end renewable energy project execution. We act as a one-stop solution partner for solar, hybrid, and emerging energy systems—from concept to commissioning.</p>
+          <p className="text-xl text-center mb-8 text-gray-900">At Genedge Renewables, 
+our EPC (Engineering, Procurement, and Construction) services 
+are designed to deliver comprehensive, end-to-end renewable energy project execution. 
+We act as a one-stop solution partner for solar, hybrid, and emerging energy systems
+—from concept to commissioning.</p>
           
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <div className="flex items-center mb-6">
@@ -106,8 +107,6 @@ const BusinessEPC = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default BusinessEPC;
