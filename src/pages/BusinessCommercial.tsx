@@ -1,11 +1,8 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import { Users } from 'lucide-react';
-
 const BusinessCommercial = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-2">C&I Solutions</h1>
@@ -47,44 +44,10 @@ const BusinessCommercial = () => {
               </li>
             </ul>
             
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Our C&I Solutions</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-4 bg-white rounded shadow-sm">
-                  <h4 className="font-medium text-genedge-orange mb-2">Rooftop Solar</h4>
-                  <p className="text-gray-700">
-                    Customized rooftop solar installations for commercial buildings, factories, and warehouses,
-                    maximizing available space and minimizing land requirements.
-                  </p>
-                </div>
-                <div className="p-4 bg-white rounded shadow-sm">
-                  <h4 className="font-medium text-genedge-orange mb-2">Ground Mount Systems</h4>
-                  <p className="text-gray-700">
-                    Large-scale ground mount solar systems for industrial clients with available land,
-                    designed for maximum generation efficiency.
-                  </p>
-                </div>
-                <div className="p-4 bg-white rounded shadow-sm">
-                  <h4 className="font-medium text-genedge-orange mb-2">Open Access Solutions</h4>
-                  <p className="text-gray-700">
-                    Off-site renewable energy solutions through open access mechanisms,
-                    allowing businesses to source green power without on-site installations.
-                  </p>
-                </div>
-                <div className="p-4 bg-white rounded shadow-sm">
-                  <h4 className="font-medium text-genedge-orange mb-2">Hybrid Systems</h4>
-                  <p className="text-gray-700">
-                    Integrated solutions combining solar with battery storage to provide
-                    reliable power during grid outages and peak demand periods.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default BusinessCommercial;
