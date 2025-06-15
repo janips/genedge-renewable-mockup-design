@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -49,11 +48,11 @@ const Navbar: React.FC = () => {
       ]
     },
     { 
-      title: "Renewable Sector in India", 
+      title: "Renewable Sector", 
       path: "/renewable-sector",
       submenu: [
         { title: "Key Policies & Regulations", path: "/renewable-sector/policies" },
-        { title: "Capacity Addition Over the Last 10 Years", path: "/renewable-sector/capacity" },
+        { title: "Capacity Addition", path: "/renewable-sector/capacity" },
         { title: "Targets by the Government", path: "/renewable-sector/targets" }
       ]
     },
