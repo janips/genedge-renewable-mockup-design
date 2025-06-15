@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import { Linkedin } from 'lucide-react';
+
 const AboutTeam = () => {
   return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
@@ -15,7 +17,12 @@ const AboutTeam = () => {
             
             <div className="grid md:grid-cols-2 gap-8 mt-8">
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-2">Ravikant Agrawal</h3>
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-xl font-semibold">Ravikant Agrawal</h3>
+                  <a href="https://linkedin.com/in/ravindra-agrawal-a596067" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+                    <Linkedin size={24} />
+                  </a>
+                </div>
                 <p className="text-gray-700 italic mb-4">Managing Director</p>
                 <p className="text-gray-700">Mr. Ravindra Agrawal has track record of more than 28 years, successfully handling Gas Trading, Transmission, City Gas Distribution and Business Development in midstream and downstream segments of natural gas and has served as Director and CEO of GIGL. 
 
@@ -39,7 +46,12 @@ He has also served as Executive Director at TiE (The Indus Entrepreneurs) Gujara
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-2">Sunil Sancheti</h3>
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-xl font-semibold">Sunil Sancheti</h3>
+                  <a href="https://linkedin.com/in/sunil-sancheti-80a82016" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+                    <Linkedin size={24} />
+                  </a>
+                </div>
                 <p className="text-gray-700 italic mb-4">Designation to be written</p>
                 <p className="text-gray-700">Mr. Sunil Sancheti, a graduate in Electronics & Communication Engineering with an MBA in Finance, brings over 11 years of diverse experience across both private and government sectors. He has held key positions at prominent organizations such as GSPL India Gasnet Limited, Adani Green Energy Limited, and EDF Renewables India Pvt. Ltd. 
 
@@ -48,7 +60,12 @@ Sunil specializes in project finance and fund-raising for large-scale infrastruc
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-2">Ankit Chanpura</h3>
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-xl font-semibold">Ankit Chanpura</h3>
+                  <a href="https://www.linkedin.com/in/ankit-chanpura-4400a426/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+                    <Linkedin size={24} />
+                  </a>
+                </div>
                 <p className="text-gray-700 italic mb-4">Designation to be written</p>
                 <p className="text-gray-700">Mr. Ankit Chanpura, who holds a Bachelor's in Electrical Engineering and an MBA in Energy and infrastructure, brings over 16 years of diverse experience in the energy sector. 
 
@@ -60,12 +77,14 @@ His expertise covers procurement, contracts, supply chain development, business 
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-2">Abhijeet Kumar</h3>
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-xl font-semibold">Abhijeet Kumar</h3>
+                  <a href="https://linkedin.com/in/abhijeet-kumar-4666b376" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
+                    <Linkedin size={24} />
+                  </a>
+                </div>
                 <p className="text-gray-700 italic mb-4">Project Management Professional</p>
-                <p className="text-gray-700 mb-4">Mr. Abhijeet Kumar is a seasoned project management professional with over 13 years of experience in delivering large-scale, high-impact projects across the renewable energy and infrastructure sectors. He has consistently demonstrated the ability to lead cross-functional teams across diverse geographies, ensuring projects are completed efficiently on time, within budget, and to the highest standards. His expertise spans the full project lifecycle—from planning and execution to stakeholder coordination and regulatory compliance. With a deep understanding of both technical and project management aspects, Abhijeet excels in navigating complex challenges and driving sustainable, results-oriented outcomes.</p>
-                <a href="https://linkedin.com/in/abhijeet-kumar-4666b376" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline text-sm">
-                  LinkedIn Profile
-                </a>
+                <p className="text-gray-700">Mr. Abhijeet Kumar is a seasoned project management professional with over 13 years of experience in delivering large-scale, high-impact projects across the renewable energy and infrastructure sectors. He has consistently demonstrated the ability to lead cross-functional teams across diverse geographies, ensuring projects are completed efficiently on time, within budget, and to the highest standards. His expertise spans the full project lifecycle—from planning and execution to stakeholder coordination and regulatory compliance. With a deep understanding of both technical and project management aspects, Abhijeet excels in navigating complex challenges and driving sustainable, results-oriented outcomes.</p>
               </div>
             </div>
           </div>
