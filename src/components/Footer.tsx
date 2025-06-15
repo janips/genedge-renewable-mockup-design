@@ -1,21 +1,15 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
-
 const Footer: React.FC = () => {
-  return (
-    <footer className="bg-white text-genedge-dark-gray pt-16 pb-8">
+  return <footer className="bg-white text-genedge-dark-gray pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img
-                src="/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png"
-                alt="Logo"
-                className="h-16 w-auto md:h-20" // Increased from h-10 to h-16 on mobile and h-20 on md
-              />
+              <img src="/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png" alt="Logo" className="h-16 w-auto md:h-20" // Increased from h-10 to h-16 on mobile and h-20 on md
+            />
             </Link>
             <p className="text-genedge-dark-gray mb-4 text-sm">
               Empowering India through Clean Energy
@@ -28,9 +22,8 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={16} className="mr-2 text-genedge-orange mt-1 flex-shrink-0" />
-                <span className="text-genedge-dark-gray text-sm">
-                  A306, Navratna Corporate Park
-                </span>
+                <span className="text-genedge-dark-gray text-sm">A306, Navratna Corporate Park,
+Ambali Road, Ashok Vatika, Ahmedabad.</span>
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2 text-genedge-orange flex-shrink-0" />
@@ -87,8 +80,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
