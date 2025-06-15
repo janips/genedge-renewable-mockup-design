@@ -1,13 +1,10 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
-
 const RenewableTargets = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-8">Government Targets</h1>
+          <h1 className="text-4xl font-bold text-center mb-8">Targets by the Government of India</h1>
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
 
             <p className="mb-8 text-gray-700">
@@ -43,8 +40,6 @@ const RenewableTargets = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default RenewableTargets;
