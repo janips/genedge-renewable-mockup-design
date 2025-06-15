@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom';
 const NavbarLogo: React.FC = () => {
   return (
     <Link to="/" className="flex items-center">
-      <div className="flex items-center space-x-2">
-        <img src="/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png" alt="Genedge Logo" className="h-12 w-auto" />
-        <span className="font-bold text-xl text-genedge-dark-gray">Genedge</span>
+      <div className="flex items-center">
+        <img src="/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png" alt="Genedge Logo" className="h-12 w-auto" />
       </div>
     </Link>
   );
