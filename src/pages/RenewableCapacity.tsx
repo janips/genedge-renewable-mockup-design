@@ -1,16 +1,11 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table";
-
 const RenewableCapacity = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-8">
-            Capacity Addition in India
-          </h1>
+          <h1 className="text-4xl font-bold text-center mb-8">Capacity Addition over the last 10 years across India</h1>
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <p className="mb-6 text-gray-700">
               India has witnessed a substantial increase in renewable energy capacity over the past decade, reflecting its commitment to sustainable energy and climate goals. According to the Ministry of New and Renewable Energy (MNRE), the country's installed renewable energy capacity (excluding large hydro) has grown from approximately 35.85 GW in March 2014 to about 167.71 GW by May 2025.
@@ -66,8 +61,6 @@ const RenewableCapacity = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default RenewableCapacity;
