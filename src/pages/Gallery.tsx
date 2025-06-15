@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 
@@ -34,23 +33,23 @@ const uploadedImages = [
     src: "/lovable-uploads/01d55dc9-543b-41af-8af2-6b0ae3e4fc4d.png",
     alt: "Solar panel maintenance team"
   },
-  {
-    src: "/lovable-uploads/57c95102-e4ea-40c4-8c7a-cbc002b780c8.png",
-    alt: "Large solar array and technical crew on site"
-  },
-  {
-    src: "/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png",
-    alt: "Electrical substation for solar power"
-  },
+  // {
+  //   src: "/lovable-uploads/57c95102-e4ea-40c4-8c7a-cbc002b780c8.png",
+  //   alt: "Large solar array and technical crew on site"
+  // },
+  // {
+  //   src: "/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png",
+  //   alt: "Electrical substation for solar power"
+  // },
   {
     src: "/lovable-uploads/8dd7cbb8-baa7-458d-9f87-d2b80406bad5.png",
     alt: "Rows of solar panels in sunlight"
   },
   // Removed index 11
-  {
-    src: "/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png",
-    alt: "Sunset over operational solar park"
-  },
+  // {
+  //   src: "/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png",
+  //   alt: "Sunset over operational solar park"
+  // },
   {
     src: "/lovable-uploads/ae04a0b0-3972-4523-9d84-51eb46096c6a.png",
     alt: "Drone view of completed solar field"
@@ -102,4 +101,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
