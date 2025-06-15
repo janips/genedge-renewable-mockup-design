@@ -1,8 +1,6 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import { Linkedin } from 'lucide-react';
-
 const AboutTeam = () => {
   return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
@@ -18,7 +16,7 @@ const AboutTeam = () => {
             <div className="grid md:grid-cols-2 gap-8 mt-8">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-xl font-semibold">Ravikant Agrawal</h3>
+                  <h3 className="text-xl font-semibold">Ravindra Agrawal</h3>
                   <a href="https://linkedin.com/in/ravindra-agrawal-a596067" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
                     <Linkedin size={24} />
                   </a>
