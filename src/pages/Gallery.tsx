@@ -35,10 +35,6 @@ const uploadedImages = [
     alt: "Solar panel maintenance team"
   },
   {
-    src: "/lovable-uploads/36feefda-9010-4332-ad14-e26b34075e95.png",
-    alt: "Engineers monitoring solar site performance"
-  },
-  {
     src: "/lovable-uploads/57c95102-e4ea-40c4-8c7a-cbc002b780c8.png",
     alt: "Large solar array and technical crew on site"
   },
@@ -50,10 +46,7 @@ const uploadedImages = [
     src: "/lovable-uploads/8dd7cbb8-baa7-458d-9f87-d2b80406bad5.png",
     alt: "Rows of solar panels in sunlight"
   },
-  {
-    src: "/lovable-uploads/858ffaca-d9cc-4565-9a10-abf1267b6c7a.png",
-    alt: "Wide field covered with solar modules"
-  },
+  // Removed index 11
   {
     src: "/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png",
     alt: "Sunset over operational solar park"
@@ -109,3 +102,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
