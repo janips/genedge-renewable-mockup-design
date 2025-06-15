@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-// 13 total: 6 old + 7 new
+// Filtered user-uploaded images (excluding logo images)
 const uploadedImages = [
   {
     src: "/lovable-uploads/36feefda-9010-4332-ad14-e26b34075e95.png",
@@ -28,15 +28,11 @@ const uploadedImages = [
     src: "/lovable-uploads/01d55dc9-543b-41af-8af2-6b0ae3e4fc4d.png",
     alt: "Team at PM-KUSUM project sign"
   },
-  // New images from most recent user uploads (sample alt text, you can adjust as descriptive as you want)
   {
     src: "/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png",
     alt: "Control room with electrical panels"
   },
-  {
-    src: "/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png",
-    alt: "Team at solar facility"
-  },
+  // Do NOT include: "/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png" (used as logo)
   {
     src: "/lovable-uploads/photo-1500673922987-e212871fec22.jpg",
     alt: "Solar field landscape with yellow lights"
