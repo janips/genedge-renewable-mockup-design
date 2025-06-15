@@ -1,6 +1,5 @@
 
 import React, { ReactNode } from 'react';
-import TopBar from './TopBar';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -11,9 +10,8 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <TopBar />
       <Navbar />
-      <main className="flex-grow pt-28">
+      <main className="flex-grow pt-20">
         {children}
       </main>
       <Footer />
