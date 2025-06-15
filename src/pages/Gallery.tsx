@@ -2,11 +2,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-// Use only the 6 newly uploaded user images, with descriptive alt text
+// Manually uploaded images (excluding obvious logo files)
+// If you upload more in future, add their src/alt here.
 const uploadedImages = [
   {
     src: "/lovable-uploads/97762ca3-a496-4200-a78c-e0660922c660.png",
-    alt: "Team members at site with electrical panels and open doors"
+    alt: "Team members at site with electrical panels and open doors",
   },
   {
     src: "/lovable-uploads/4b71101e-2e4b-4968-9a02-1492571fd4d7.png",
@@ -27,7 +28,40 @@ const uploadedImages = [
   {
     src: "/lovable-uploads/b70860da-0b55-4804-a85c-6e58d2ed3c4b.png",
     alt: "Solar arrays with monitoring pole"
-  }
+  },
+  // Add more non-logo images here, with descriptive alt text:
+  {
+    src: "/lovable-uploads/01d55dc9-543b-41af-8af2-6b0ae3e4fc4d.png",
+    alt: "Solar panel maintenance team"
+  },
+  {
+    src: "/lovable-uploads/36feefda-9010-4332-ad14-e26b34075e95.png",
+    alt: "Engineers monitoring solar site performance"
+  },
+  {
+    src: "/lovable-uploads/57c95102-e4ea-40c4-8c7a-cbc002b780c8.png",
+    alt: "Large solar array and technical crew on site"
+  },
+  {
+    src: "/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png",
+    alt: "Electrical substation for solar power"
+  },
+  {
+    src: "/lovable-uploads/8dd7cbb8-baa7-458d-9f87-d2b80406bad5.png",
+    alt: "Rows of solar panels in sunlight"
+  },
+  {
+    src: "/lovable-uploads/858ffaca-d9cc-4565-9a10-abf1267b6c7a.png",
+    alt: "Wide field covered with solar modules"
+  },
+  {
+    src: "/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png",
+    alt: "Sunset over operational solar park"
+  },
+  {
+    src: "/lovable-uploads/ae04a0b0-3972-4523-9d84-51eb46096c6a.png",
+    alt: "Drone view of completed solar field"
+  },
 ];
 
 const Gallery = () => {
@@ -35,26 +69,32 @@ const Gallery = () => {
     <Layout>
       <div className="py-16 bg-gray-50 min-h-screen">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-8">Project Gallery</h1>
+          <h1 className="text-4xl font-bold text-center mb-2">
+            Project Gallery&nbsp;
+            <span className="text-2xl text-gray-600 font-normal">
+              ({uploadedImages.length} photos)
+            </span>
+          </h1>
           <div className="max-w-6xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <p className="text-gray-700 leading-relaxed text-center">
                 Explore real-life highlights from Genedge projects: from sweeping aerial views of solar fields to hands-on technical details and teamwork. This gallery showcases how we deliver clean energy—at every stage of the journey.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
               {uploadedImages.map((img, i) => (
                 <div
                   key={i}
-                  className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl hover-scale bg-white"
+                  className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white"
                 >
                   <img
                     src={img.src}
                     alt={img.alt}
+                    loading="lazy"
                     className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white text-base font-semibold drop-shadow">
+                    <span className="text-white text-base font-semibold drop-shadow text-center px-2">
                       {img.alt}
                     </span>
                   </div>
@@ -69,4 +109,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
