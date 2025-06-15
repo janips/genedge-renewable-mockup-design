@@ -103,13 +103,22 @@ const Navbar: React.FC = () => {
             <div className="hidden md:flex items-center space-x-1">
               {navLinks.map((link) => (
                 <div key={link.title} className="relative group">
-                  <button 
-                    onClick={() => link.submenu && handleDropdown(link.title)}
-                    className={`px-3 py-2 rounded-md text-sm font-medium flex items-center hover:text-genedge-green transition-colors text-gray-700 ${activeDropdown === link.title ? "text-genedge-green" : ""}`}
-                  >
-                    {link.title}
-                    {link.submenu && <ChevronDown className="ml-1 h-4 w-4" />}
-                  </button>
+                  {link.submenu ? (
+                    <button 
+                      onClick={() => handleDropdown(link.title)}
+                      className={`px-3 py-2 rounded-md text-sm font-medium flex items-center hover:text-genedge-green transition-colors text-gray-700 ${activeDropdown === link.title ? "text-genedge-green" : ""}`}
+                    >
+                      {link.title}
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </button>
+                  ) : (
+                    <Link 
+                      to={link.path}
+                      className="px-3 py-2 rounded-md text-sm font-medium hover:text-genedge-green transition-colors text-gray-700"
+                    >
+                      {link.title}
+                    </Link>
+                  )}
 
                   {link.submenu && (
                     <div 
