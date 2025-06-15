@@ -2,31 +2,31 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-// Only the first 6 user-uploaded images (excluding any logo images)
+// Use only the 6 newly uploaded user images, with descriptive alt text
 const uploadedImages = [
   {
-    src: "/lovable-uploads/36feefda-9010-4332-ad14-e26b34075e95.png",
-    alt: "Team on project site"
+    src: "/lovable-uploads/97762ca3-a496-4200-a78c-e0660922c660.png",
+    alt: "Team members at site with electrical panels and open doors"
   },
   {
-    src: "/lovable-uploads/8dd7cbb8-baa7-458d-9f87-d2b80406bad5.png",
-    alt: "Aerial solar field 1"
+    src: "/lovable-uploads/4b71101e-2e4b-4968-9a02-1492571fd4d7.png",
+    alt: "Wide view of solar farm under cloudy sky"
   },
   {
-    src: "/lovable-uploads/858ffaca-d9cc-4565-9a10-abf1267b6c7a.png",
-    alt: "Aerial solar field 2"
+    src: "/lovable-uploads/c77a4bd4-0e26-452e-834c-64ba1d8ce410.png",
+    alt: "Transformers and control equipment at solar site"
   },
   {
-    src: "/lovable-uploads/57c95102-e4ea-40c4-8a7b-cbc002b780c8.png",
-    alt: "Solar panel, equipment and crew"
+    src: "/lovable-uploads/8ec0f678-a63b-4d8f-8c1d-803416069ded.png",
+    alt: "Aerial view of solar park and fields"
   },
   {
-    src: "/lovable-uploads/ae04a0b0-3972-4523-9d84-51eb46096c6a.png",
-    alt: "Aerial solar field 3"
+    src: "/lovable-uploads/fefedaf2-3837-4073-a2ff-87b819eb3020.png",
+    alt: "Top down view of solar panels and farmland"
   },
   {
-    src: "/lovable-uploads/01d55dc9-543b-41af-8af2-6b0ae3e4fc4d.png",
-    alt: "Team at PM-KUSUM project sign"
+    src: "/lovable-uploads/b70860da-0b55-4804-a85c-6e58d2ed3c4b.png",
+    alt: "Solar arrays with monitoring pole"
   }
 ];
 
