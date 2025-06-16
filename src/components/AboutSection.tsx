@@ -31,10 +31,7 @@ const AboutSection: React.FC = () => {
                 </div>
               </div>
               
-              <div className="absolute -bottom-8 -right-8 md:bottom-8 md:right-8 bg-white p-6 rounded-lg shadow-lg hidden md:block">
-                <div className="text-4xl font-bold text-genedge-green">10+</div>
-                <div className="text-gray-600">Years of Excellence</div>
-              </div>
+              
             </div>
           </div>
           
