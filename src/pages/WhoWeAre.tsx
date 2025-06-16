@@ -1,23 +1,15 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
-
 const WhoWeAre = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Who Are We</h1>
           
           <div className="max-w-4xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-md mb-8">
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Genedge Renewables is a pioneering renewable energy company dedicated to 
-                transforming India's energy landscape through innovative solar and wind 
-                power solutions. Established with a vision to accelerate India's transition 
-                to clean energy, we have emerged as a trusted partner in the country's 
-                renewable energy journey.
-              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">We are a team of engineers, developers, and energy experts passionate about reshaping India's power future. With extensive experience in renewable energy, we deliver custom energy systems across agricultural, industrial, and grid-scale landscapes.
+            </p>
               
               <p className="text-gray-700 leading-relaxed mb-6">
                 Our team comprises industry veterans, technical experts, and passionate 
@@ -53,8 +45,6 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default WhoWeAre;
