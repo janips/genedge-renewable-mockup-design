@@ -66,9 +66,7 @@ const Gallery = () => {
               {uploadedImages.map((img, i) => <div key={i} className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white">
                   <img src={img.src} alt={img.alt} loading="lazy" className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" />
                   <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white text-base font-semibold drop-shadow text-center px-2">
-                      {img.alt}
-                    </span>
+                    
                   </div>
                 </div>)}
             </div>
