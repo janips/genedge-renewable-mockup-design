@@ -9,6 +9,27 @@ const About = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Company</h1>
           
+          {/* Company Overview - Moved to top */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold text-genedge-orange mb-6">About Genedge Renewables</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Genedge Renewables Private Limited, an integral part of the Enertech Group, 
+                is dedicated to harnessing the power of renewable resources to meet the 
+                growing energy demands in India. We specialize in developing, implementing, 
+                and maintaining renewable energy projects across multiple sectors.
+              </p>
+              
+              <p className="text-gray-700 leading-relaxed">
+                The company is formed with a vision of establishing itself as one of the 
+                leading renewable energy companies, with a balanced project portfolio, 
+                spanning across technologies, geographies, utilities and credible third 
+                party customer base. Our comprehensive approach ensures sustainable energy 
+                solutions that contribute to India's clean energy transition.
+              </p>
+            </div>
+          </div>
+
           {/* Vision & Mission Section */}
           <div className="max-w-4xl mx-auto mb-12">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -78,27 +99,6 @@ const About = () => {
                 <h3 className="text-xl font-bold text-genedge-green mb-2">Commitment</h3>
                 <p className="text-gray-700">Dedicated to India's clean energy future</p>
               </div>
-            </div>
-          </div>
-
-          {/* Company Overview */}
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-genedge-orange mb-6">About Genedge Renewables</h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Genedge Renewables Private Limited, an integral part of the Enertech Group, 
-                is dedicated to harnessing the power of renewable resources to meet the 
-                growing energy demands in India. We specialize in developing, implementing, 
-                and maintaining renewable energy projects across multiple sectors.
-              </p>
-              
-              <p className="text-gray-700 leading-relaxed">
-                The company is formed with a vision of establishing itself as one of the 
-                leading renewable energy companies, with a balanced project portfolio, 
-                spanning across technologies, geographies, utilities and credible third 
-                party customer base. Our comprehensive approach ensures sustainable energy 
-                solutions that contribute to India's clean energy transition.
-              </p>
             </div>
           </div>
         </div>
