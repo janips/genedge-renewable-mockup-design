@@ -7,11 +7,7 @@ const AboutParent = () => {
           <h1 className="text-4xl font-bold text-center mb-8">Parent Company</h1>
           
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
-            <p className="mb-6 text-gray-700">
-              EFSPL offers complete solutions in Natural Gas Sourcing, Contract Management, Formulation and Management of 
-              Gas Sales Agreement (GSA) & Gas Transmission Agreement (GTA), Regulatory Affairs Management, DFR Preparation, 
-              Project Financing, setting up City Gas Distribution (CGD) Network etc.
-            </p>
+            <p className="mb-6 text-gray-700">Enertech Energy Resources Private Limited, (“EERPL”), formerly known as Enertech Fuel Solutions Private Limited, offers complete solutions in Natural Gas Sourcing, Contract Management, Formulation and Management of Gas Sales Agreement (GSA) &amp; Gas Transmission Agreement (GTA), Regulatory Affairs Management, DFR Preparation, Project Financing, setting up City Gas Distribution (CGD) Network etc.</p>
             
             <p className="mb-6 text-gray-700">
               EFSPL also offers gas sourcing solutions to customers who are not connected to pipeline through virtual pipeline 
