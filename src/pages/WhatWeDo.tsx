@@ -1,10 +1,7 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
-
 const WhatWeDo = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">What We Do</h1>
@@ -45,7 +42,7 @@ const WhatWeDo = () => {
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-genedge-green mb-4">EPC Services</h3>
+                <h3 className="text-xl font-bold text-genedge-green mb-4">Stand Alone BESS</h3>
                 <p className="text-gray-700 mb-4">
                   End-to-end Engineering, Procurement, and Construction 
                   services for renewable energy projects.
@@ -58,7 +55,7 @@ const WhatWeDo = () => {
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-genedge-orange mb-4">O&M Services</h3>
+                <h3 className="text-xl font-bold text-genedge-orange mb-4">Hybrid Energy Projects</h3>
                 <p className="text-gray-700 mb-4">
                   Comprehensive operation and maintenance services 
                   ensuring optimal performance and longevity.
@@ -71,7 +68,7 @@ const WhatWeDo = () => {
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-genedge-green mb-4">Energy Storage</h3>
+                <h3 className="text-xl font-bold text-genedge-green mb-4">Tailormade EPC Service</h3>
                 <p className="text-gray-700 mb-4">
                   Advanced Battery Energy Storage Systems (BESS) 
                   for grid stability and energy optimization.
@@ -83,24 +80,11 @@ const WhatWeDo = () => {
                 </ul>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-genedge-orange mb-4">C&I Solutions</h3>
-                <p className="text-gray-700 mb-4">
-                  Customized Commercial & Industrial renewable 
-                  energy solutions for enterprises.
-                </p>
-                <ul className="text-sm text-gray-600 list-disc list-inside">
-                  <li>Corporate solar solutions</li>
-                  <li>Industrial energy systems</li>
-                  <li>Energy efficiency consulting</li>
-                </ul>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default WhatWeDo;
