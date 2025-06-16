@@ -1,8 +1,11 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Sun, Wind, Battery, Users, Settings, Wrench, ArrowRight } from 'lucide-react';
+
 const BusinessVerticals: React.FC = () => {
   const [activeTab, setActiveTab] = useState("kusum");
+
   const businesses = [{
     id: "kusum",
     icon: <Sun className="h-6 w-6 animate-pulse" />,
@@ -52,7 +55,79 @@ const BusinessVerticals: React.FC = () => {
     image: "https://images.unsplash.com/photo-1595437193398-f24279553f4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     linkUrl: "/businesses/om"
   }];
+
   const activeBusiness = businesses.find(business => business.id === activeTab);
-  return;
+
+  return (
+    <section className="py-16 bg-genedge-light-gray">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <div className="inline-block rounded-full bg-green-100 px-3 py-1 text-sm font-semibold text-genedge-green mb-4">
+            Our Business
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Business Verticals</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Comprehensive renewable energy solutions across multiple sectors
+          </p>
+        </div>
+
+        {/* Tab Navigation */}
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {businesses.map((business) => (
+            <button
+              key={business.id}
+              onClick={() => setActiveTab(business.id)}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${
+                activeTab === business.id
+                  ? 'bg-genedge-green text-white shadow-lg'
+                  : 'bg-white text-gray-600 hover:bg-gray-50'
+              }`}
+            >
+              {business.icon}
+              <span className="font-medium">{business.title}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* Active Business Content */}
+        {activeBusiness && (
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="p-8 lg:p-12">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-genedge-green/10 rounded-lg">
+                    {activeBusiness.icon}
+                  </div>
+                  <h3 className="text-2xl lg:text-3xl font-bold">{activeBusiness.title}</h3>
+                </div>
+                <h4 className="text-lg text-genedge-green font-semibold mb-4">
+                  {activeBusiness.subtitle}
+                </h4>
+                <p className="text-gray-600 mb-8 leading-relaxed">
+                  {activeBusiness.description}
+                </p>
+                <Link
+                  to={activeBusiness.linkUrl}
+                  className="inline-flex items-center gap-2 bg-genedge-green text-white px-6 py-3 rounded-lg hover:bg-genedge-green/90 transition-colors"
+                >
+                  Learn More
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+              <div className="relative h-64 lg:h-auto">
+                <img
+                  src={activeBusiness.image}
+                  alt={activeBusiness.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-genedge-green/20 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
 };
+
 export default BusinessVerticals;
