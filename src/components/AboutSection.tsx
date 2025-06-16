@@ -57,10 +57,7 @@ const AboutSection: React.FC = () => {
                 </div>)}
             </div>
             
-            <Link to="/about" className="inline-flex items-center text-genedge-green hover:underline font-medium">
-              Learn more about our company
-              <ArrowRight size={16} className="ml-2" />
-            </Link>
+            
           </div>
         </div>
       </div>

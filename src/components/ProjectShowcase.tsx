@@ -62,7 +62,7 @@ const ProjectShowcase: React.FC = () => {
       <div className="mt-20">
         <div className="bg-gradient-to-r from-genedge-green to-genedge-orange py-[50px]">
           <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row justify-between items-center py-[60px]">
               <div className="mb-8 md:mb-0 text-center md:text-left">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">Ready to Switch to Clean Energy?</h3>
                 <p className="text-white text-opacity-90">
