@@ -43,36 +43,27 @@ const WhatWeDo = () => {
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-genedge-green mb-4">Stand Alone BESS</h3>
-                <p className="text-gray-700 mb-4">
-                  End-to-end Engineering, Procurement, and Construction 
-                  services for renewable energy projects.
-                </p>
+                <p className="text-gray-700 mb-4">Content needed</p>
                 <ul className="text-sm text-gray-600 list-disc list-inside">
-                  <li>Project design & engineering</li>
-                  <li>Equipment procurement</li>
-                  <li>Construction management</li>
+                  <li>Content</li>
+                  <li>Content</li>
+                  <li>Contet</li>
                 </ul>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-genedge-orange mb-4">Hybrid Energy Projects</h3>
-                <p className="text-gray-700 mb-4">
-                  Comprehensive operation and maintenance services 
-                  ensuring optimal performance and longevity.
-                </p>
+                <p className="text-gray-700 mb-4">Content needed</p>
                 <ul className="text-sm text-gray-600 list-disc list-inside">
-                  <li>Preventive maintenance</li>
-                  <li>Performance monitoring</li>
-                  <li>Asset management</li>
+                  <li>Content</li>
+                  <li>Content</li>
+                  <li>Content</li>
                 </ul>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-genedge-green mb-4">Tailormade EPC Service</h3>
-                <p className="text-gray-700 mb-4">
-                  Advanced Battery Energy Storage Systems (BESS) 
-                  for grid stability and energy optimization.
-                </p>
+                <p className="text-gray-700 mb-4">Content</p>
                 <ul className="text-sm text-gray-600 list-disc list-inside">
                   <li>Grid-scale storage systems</li>
                   <li>Hybrid storage solutions</li>
