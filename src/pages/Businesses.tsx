@@ -1,12 +1,9 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { Sun, Wind, Battery, Users, Settings, Wrench } from 'lucide-react';
-
 const Businesses = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Our Businesses</h1>
@@ -14,11 +11,7 @@ const Businesses = () => {
           <div className="max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-md mb-10">
               <h2 className="text-2xl font-semibold mb-4">A Strategic Approach to Clean Energy Deployment</h2>
-              <p className="text-gray-700 mb-6">
-                Genedge's project portfolio is built on a four-tier foundation designed to drive widespread 
-                renewable energy adoption across India. This diversified strategy enables us to serve multiple 
-                sectors effectively while ensuring long-term growth, resilience, and impact.
-              </p>
+              <p className="text-gray-700 mb-6">Genedge's project portfolio is built on a Multi-tier foundation designed to drive widespread renewable energy adoption across India. This diversified strategy enables us to serve multiple sectors effectively while ensuring long-term growth, resilience, and impact.</p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -109,8 +102,6 @@ const Businesses = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Businesses;
