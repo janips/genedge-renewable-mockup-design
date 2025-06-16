@@ -1,10 +1,7 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
-
 const AboutParent = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Parent Company</h1>
@@ -28,17 +25,12 @@ const AboutParent = () => {
             </p>
             
             <div className="mt-8 bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Our Expansion into Renewable Energy</h3>
-              <p className="text-gray-700">
-                Through Genedge Renewables, EFSPL is committed to driving the transition to clean energy while maintaining 
-                the same standards of excellence, reliability, and customer service that have defined our natural gas business.
-              </p>
+              
+              <p className="text-gray-700">More details can be found at https://www.enertechfuelsolutions.com/ </p>
             </div>
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default AboutParent;
