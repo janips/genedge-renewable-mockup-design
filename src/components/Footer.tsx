@@ -1,8 +1,11 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+
 const Footer: React.FC = () => {
-  return <footer className="bg-white text-genedge-dark-gray pt-16 pb-8">
+  return (
+    <footer className="bg-white text-genedge-dark-gray pt-16 pb-8">
       {/* Divider line at top of footer */}
       <hr className="border-t border-genedge-light-gray mb-8" />
       <div className="container mx-auto px-4">
@@ -10,8 +13,11 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img alt="Logo" className="h-16 w-auto md:h-20" // Increased from h-10 to h-16 on mobile and h-20 on md
-            src="/lovable-uploads/977ca71d-e725-4fa7-9d87-e1490c47cc1a.png" />
+              <img 
+                alt="Logo" 
+                className="h-16 w-auto md:h-20"
+                src="/lovable-uploads/977ca71d-e725-4fa7-9d87-e1490c47cc1a.png" 
+              />
             </Link>
             <p className="text-genedge-dark-gray mb-4 text-sm">
               Empowering India through Clean Energy
@@ -37,7 +43,7 @@ Ambali Road, Ashok Vatika, Ahmedabad.</span>
               </li>
               <li className="flex items-center">
                 <Linkedin size={16} className="mr-2 text-genedge-orange flex-shrink-0" />
-                <a href="#" target="_blank" rel="noopener noreferrer" className="text-genedge-dark-gray hover:text-genedge-orange transition-colors text-sm">LinkedIn Page</a>
+                <a href="https://www.linkedin.com/company/genedge-renewables-private-limited/" target="_blank" rel="noopener noreferrer" className="text-genedge-dark-gray hover:text-genedge-orange transition-colors text-sm">LinkedIn Page</a>
               </li>
             </ul>
           </div>
@@ -82,6 +88,8 @@ Ambali Road, Ashok Vatika, Ahmedabad.</span>
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

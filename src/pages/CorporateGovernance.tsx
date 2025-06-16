@@ -98,7 +98,7 @@ const CorporateGovernance = () => {
             </div>
             
             {/* Code of Conduct Section */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <h2 className="text-2xl font-bold text-genedge-green mb-6">Code of Conduct</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
                 At Genedge, our commitment to sustainability goes beyond clean energy—we believe in ethical leadership and responsible business practices. Our Code of Conduct is a cornerstone of our corporate governance framework, guiding how we operate, interact, and grow with integrity.

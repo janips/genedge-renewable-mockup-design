@@ -1,40 +1,110 @@
+
 import React from 'react';
 import Layout from '../components/Layout';
+
 const About = () => {
-  return <Layout>
-      <div className="pt-24 pb-16 bg-gray-50">
-        <div className="container mx-auto px-0">
-          <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
+  return (
+    <Layout>
+      <div className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-bold text-center mb-8">Company</h1>
           
-          <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold mb-4">About the Company</h2>
-            <p className="mb-6 text-gray-700">Genedge Renewables Private Limited, an integral part of the Enertech Group, is dedicated to harnessing the power of renewable resources to meet the growing energy demands in India.</p>
-            
-            <p className="mb-6 text-gray-700">The company is formed with a vision of establishing itself as one of the leading renewable energy company, with a balanced project portfolio, spanning across technologies, geographies, utilities and credible third party customer base.</p>
-            
-            <p className="mb-8 text-gray-700">We are committed to driving the transition to a sustainable world through reliable, and affordable renewable energy solutions. Founded with a mission to reduce carbon footprints and empower communities, we harness the power of the sun and other clean sources to create a brighter tomorrow.
-          </p>
-            
-            
-            <div className="mb-8 p-6 p-6 border-yellow-50 px-0 py-0 bg-white rounded-none ">
+          {/* Vision & Mission Section */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-white p-8 rounded-lg shadow-md">
+                <h2 className="text-2xl font-bold text-genedge-green mb-4">Our Vision</h2>
+                <p className="text-gray-700 leading-relaxed">To be a significant contributor in the national transition towards a sustainable future, driven by renewable energy solutions, for the generations to come.</p>
+              </div>
               
+              <div className="bg-white p-8 rounded-lg shadow-md">
+                <h2 className="text-2xl font-bold text-genedge-orange mb-4">Our Mission</h2>
+                <p className="text-gray-700 leading-relaxed">Nurture a dynamic and agile team, build internal processes, develop strong relationships with stakeholders based on the foundation of mutual respect, transparency and growth, to scale up the project pipeline of diversified renewable energy projects to 1 GW by end of 2027.</p>
+              </div>
             </div>
             
+            <div className="bg-white p-8 rounded-lg shadow-md mb-8">
+              <h2 className="text-2xl font-bold text-center mb-6">Our Core Values</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-genedge-green mb-2">Innovation</h3>
+                  <p className="text-gray-700">Embracing cutting-edge technologies for sustainable solutions</p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-genedge-orange mb-2">Integrity</h3>
+                  <p className="text-gray-700">Conducting business with transparency and ethical practices</p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-genedge-green mb-2">Excellence</h3>
+                  <p className="text-gray-700">Delivering superior quality in all our endeavors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Who We Are Section */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="bg-white p-8 rounded-lg shadow-md mb-8">
+              <h2 className="text-2xl font-bold text-genedge-green mb-6">Who We Are</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">We are a team of engineers, developers, and energy experts passionate about reshaping India's power future. With extensive experience in renewable energy, we deliver custom energy systems across agricultural, industrial, and grid-scale landscapes.</p>
+              
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Our team comprises industry veterans, technical experts, and passionate 
+                professionals who bring decades of combined experience in renewable energy 
+                development, project management, and sustainable technology implementation. 
+                We pride ourselves on our ability to deliver comprehensive energy solutions 
+                that meet the diverse needs of our clients while contributing to 
+                environmental sustainability.
+              </p>
+              
+              <p className="text-gray-700 leading-relaxed">
+                From conceptualization to commissioning, we handle every aspect of renewable 
+                energy projects with precision and expertise. Our commitment to excellence, 
+                innovation, and sustainable development has positioned us as a reliable 
+                partner for businesses, governments, and communities seeking clean energy solutions.
+              </p>
+            </div>
             
-            
-            
-            
-            <ul className="list-disc pl-6 mb-8 text-gray-700">
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 className="text-xl font-bold text-genedge-green mb-2">Experience</h3>
+                <p className="text-gray-700">Years of expertise in renewable energy development</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 className="text-xl font-bold text-genedge-orange mb-2">Innovation</h3>
+                <p className="text-gray-700">Cutting-edge technology and sustainable solutions</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 className="text-xl font-bold text-genedge-green mb-2">Commitment</h3>
+                <p className="text-gray-700">Dedicated to India's clean energy future</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Company Overview */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold text-genedge-orange mb-6">About Genedge Renewables</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Genedge Renewables Private Limited, an integral part of the Enertech Group, 
+                is dedicated to harnessing the power of renewable resources to meet the 
+                growing energy demands in India. We specialize in developing, implementing, 
+                and maintaining renewable energy projects across multiple sectors.
+              </p>
               
-              
-              
-              
-              
-              
-            </ul>
+              <p className="text-gray-700 leading-relaxed">
+                The company is formed with a vision of establishing itself as one of the 
+                leading renewable energy companies, with a balanced project portfolio, 
+                spanning across technologies, geographies, utilities and credible third 
+                party customer base. Our comprehensive approach ensures sustainable energy 
+                solutions that contribute to India's clean energy transition.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default About;

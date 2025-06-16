@@ -8,8 +8,6 @@ export const navLinks: NavLinkType[] = [
     path: "/about",
     submenu: [
       { title: "Company", path: "/about" },
-      { title: "Vision & Mission", path: "/about/vision-mission" },
-      { title: "Who Are We", path: "/about/who-we-are" },
       { title: "What We Do", path: "/about/what-we-do" },
       { title: "Management Team", path: "/about/team" },
       { title: "Parent Company", path: "/about/parent" }
@@ -42,11 +40,11 @@ export const navLinks: NavLinkType[] = [
     path: "/projects",
     submenu: [
       { title: "Existing Project Portfolio", path: "/projects" },
-      { title: "Project Map", path: "/projects/map" }
+      { title: "Project Map", path: "/projects/map" },
+      { title: "Gallery", path: "/gallery" }
     ]
   },
   { title: "Corporate Governance", path: "/corporate-governance" },
-  { title: "Gallery", path: "/gallery" },
   { title: "Careers", path: "/careers" },
   { title: "Get in Touch", path: "/contact" }
 ];
