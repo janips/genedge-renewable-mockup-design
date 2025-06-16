@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '../components/Layout';
 
@@ -21,33 +22,38 @@ const uploadedImages = [{
 }, {
   src: "/lovable-uploads/b70860da-0b55-4804-a85c-6e58d2ed3c4b.png",
   alt: "Solar arrays with monitoring pole"
-},
-// Add more non-logo images here, with descriptive alt text:
-{
+}, {
   src: "/lovable-uploads/01d55dc9-543b-41af-8af2-6b0ae3e4fc4d.png",
   alt: "Solar panel maintenance team"
-},
-// {
-//   src: "/lovable-uploads/57c95102-e4ea-40c4-8c7a-cbc002b780c8.png",
-//   alt: "Large solar array and technical crew on site"
-// },
-// {
-//   src: "/lovable-uploads/7e0d13de-07d5-416e-94fb-c893368715f1.png",
-//   alt: "Electrical substation for solar power"
-// },
-{
+}, {
   src: "/lovable-uploads/8dd7cbb8-baa7-458d-9f87-d2b80406bad5.png",
   alt: "Rows of solar panels in sunlight"
-},
-// Removed index 11
-// {
-//   src: "/lovable-uploads/9c1e06fa-ffb9-4b41-befa-898b7fd97a22.png",
-//   alt: "Sunset over operational solar park"
-// },
-{
+}, {
   src: "/lovable-uploads/ae04a0b0-3972-4523-9d84-51eb46096c6a.png",
   alt: "Drone view of completed solar field"
+}, {
+  src: "/lovable-uploads/6d77f475-a6fd-4a1d-ade9-6375311f1e2f.png",
+  alt: "Large solar installation with monitoring tower"
+}, {
+  src: "/lovable-uploads/ba424455-22e6-4d3f-aa96-581a1dffa848.png",
+  alt: "Aerial view of solar farm in agricultural landscape"
+}, {
+  src: "/lovable-uploads/2fcb85d0-6490-4ab2-bcab-e29b9f0bfe86.png",
+  alt: "Ground-mounted solar panels in organized rows"
+}, {
+  src: "/lovable-uploads/13de4ada-26ef-4ef9-858f-76a98c2ed327.png",
+  alt: "Panoramic view of solar park installation"
+}, {
+  src: "/lovable-uploads/a6353e8e-abc7-4bac-9554-996b026179a7.png",
+  alt: "Solar facility with electrical infrastructure and control systems"
+}, {
+  src: "/lovable-uploads/ccc2fd83-f49f-47a4-8e53-a778b0393e42.png",
+  alt: "Rural solar installation surrounded by agricultural fields"
+}, {
+  src: "/lovable-uploads/527357e9-133f-4f76-a550-bf1927564090.png",
+  alt: "Large-scale solar array with construction area visible"
 }];
+
 const Gallery = () => {
   return <Layout>
       <div className="py-16 bg-gray-50 min-h-screen">
@@ -75,4 +81,5 @@ const Gallery = () => {
       </div>
     </Layout>;
 };
+
 export default Gallery;
