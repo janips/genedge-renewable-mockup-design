@@ -15,7 +15,7 @@ const AboutSection: React.FC = () => {
     icon: <Activity className="h-8 w-8 text-purple-500" />,
     label: "EPC Services"
   }];
-  return <section className="py-20 bg-genedge-light-gray">
+  return <section className="bg-genedge-light-gray py-0">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
