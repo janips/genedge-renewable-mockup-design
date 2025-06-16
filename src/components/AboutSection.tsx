@@ -40,12 +40,8 @@ const AboutSection: React.FC = () => {
               About Us
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Contributing India's Clean Energy Revolution</h2>
-            <p className="text-gray-600 mb-6">
-              Genedge Renewables Private Limited is part of the esteemed Enertech Group, dedicated to harnessing the power of renewable resources to meet the growing energy demands in India. 
-            </p>
-            <p className="text-gray-600 mb-6">
-              We are committed to driving the transition to a sustainable world through reliable and affordable renewable energy solutions. Founded with a mission to reduce carbon footprints and empower communities, we harness the power of the sun and other clean sources to create a brighter tomorrow.
-            </p>
+            <p className="text-gray-600 mb-6">Genedge Renewables Private Limited, an integral part of the Enertech Group, is dedicated to harnessing the power of renewable resources to meet the growing energy demands in India.</p>
+            <p className="text-gray-600 mb-6">The company is formed with a vision of establishing itself as one of the leading renewable energy company, with a balanced project portfolio, spanning across technologies, geographies, utilities and credible third party customer base.</p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {services.map((service, index) => <div key={index} className="bg-white p-4 rounded-lg shadow-sm text-center">
