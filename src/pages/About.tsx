@@ -1,9 +1,16 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
+
 const About = () => {
-  return <Layout>
-      <PageBanner title="Company" subtitle="Leading India's Clean Energy Revolution" backgroundImage="/lovable-uploads/3802b10c-0aac-4dec-afbe-12108ed7fdf6.png" />
+  return (
+    <Layout>
+      <PageBanner 
+        title="Company" 
+        subtitle="Leading India's Clean Energy Revolution" 
+        backgroundImage="/lovable-uploads/3802b10c-0aac-4dec-afbe-12108ed7fdf6.png"
+        textAlign="left"
+      />
       <div className="bg-gray-50 py-[10px]">
         <div className="container mx-auto px-4">
           {/* Company Overview - Moved to top */}
@@ -100,6 +107,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default About;
