@@ -18,11 +18,9 @@ const AboutParent = () => {
             <p className="mb-6 text-gray-700">EERPL also offers gas sourcing solutions to customers who are not connected to pipeline through virtual pipeline using innovative methods like LNG by truck and transportation of compressed gas through cascades.</p>
             
             <p className="mb-6 text-gray-700">At EERPL, we are proud to expand into the thriving sector of renewable energy, marking a significant milestone in our journey towards a sustainable future. With a legacy built on excellence in natural gas trading, we are now leveraging our expertise to embrace the burgeoning opportunities in solar and wind energy generation.</p>
-            
-            <div className="mt-8 bg-gray-50 p-6 rounded-lg">
-              
-              <p className="text-gray-700">More details can be found at https://www.enertechfuelsolutions.com/ </p>
-            </div>
+
+            <p className="mb-6 text-gray-700">More details can be found at <a href="https://www.enertechfuelsolutions.com/"> www.enertechfuelsolutions.com</a></p>
+
           </div>
         </div>
       </div>
