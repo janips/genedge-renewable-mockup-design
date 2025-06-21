@@ -25,7 +25,7 @@ const AboutSection: React.FC = () => {
                   <img src="/lovable-uploads/8dd7cbb8-baa7-458d-9f87-d2b80406bad5.png" alt="Solar panels installation" className="rounded-lg shadow-lg w-full h-64 object-cover mb-4" />
                   <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Wind turbines" className="rounded-lg shadow-lg w-full h-40 object-cover" />
                 </div>
-                <div className="mt-8">
+                <div >
                   <img src="https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Agricultural solar panels" className="rounded-lg shadow-lg w-full h-40 object-cover mb-4" />
                   <img src="/lovable-uploads/c77a4bd4-0e26-452e-834c-64ba1d8ce410.png" alt="Battery storage systems" className="rounded-lg shadow-lg w-full h-64 object-cover" />
                 </div>
