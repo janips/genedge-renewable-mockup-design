@@ -1,17 +1,11 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
 import { Sun } from 'lucide-react';
-
 const BusinessKusum = () => {
   return <Layout>
-      <PageBanner 
-        title="PM Kusum Projects"
-        subtitle="Empowering Farmers. Energizing Agriculture"
-        backgroundImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-      />
-      <div className="pt-8 pb-16 bg-gray-50">
+      <PageBanner title="PM Kusum Projects" subtitle="Empowering Farmers. Energizing Agriculture" backgroundImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
+      <div className="pt-8 pb-16 bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <div className="flex items-center mb-6">
@@ -68,5 +62,4 @@ const BusinessKusum = () => {
       </div>
     </Layout>;
 };
-
 export default BusinessKusum;
