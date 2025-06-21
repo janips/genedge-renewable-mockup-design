@@ -9,7 +9,7 @@ const BusinessBess = () => {
       <PageBanner 
         title="Battery Energy Storage Systems"
         subtitle="Storing Power. Strengthening the Grid"
-        backgroundImage="/lovable-uploads/c77a4bd4-0e26-452e-834c-64ba1d8ce410.png"
+        backgroundImage="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
       />
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">

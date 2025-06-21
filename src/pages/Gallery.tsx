@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
@@ -59,7 +60,7 @@ const Gallery = () => {
       <PageBanner 
         title="Project Gallery"
         subtitle="Explore Our Renewable Energy Projects"
-        backgroundImage="/lovable-uploads/ae04a0b0-3972-4523-9d84-51eb46096c6a.png"
+        backgroundImage="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
       />
       <div className="py-16 bg-gray-50 min-h-screen">
         <div className="container mx-auto px-4">

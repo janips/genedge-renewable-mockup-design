@@ -9,7 +9,7 @@ const BusinessOM = () => {
       <PageBanner 
         title="O&M Business"
         subtitle="Maximizing Performance. Ensuring Longevity"
-        backgroundImage="/lovable-uploads/01d55dc9-543b-41af-8af2-6b0ae3e4fc4d.png"
+        backgroundImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
       />
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">

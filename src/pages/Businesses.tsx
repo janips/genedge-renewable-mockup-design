@@ -10,7 +10,7 @@ const Businesses = () => {
       <PageBanner 
         title="Our Businesses"
         subtitle="A Strategic Approach to Clean Energy Deployment"
-        backgroundImage="/lovable-uploads/13de4ada-26ef-4ef9-858f-76a98c2ed327.png"
+        backgroundImage="https://images.unsplash.com/photo-1518737801142-6a0a18af7e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
       />
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">

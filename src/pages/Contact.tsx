@@ -1,6 +1,6 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
+import PageBanner from '../components/PageBanner';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -27,6 +27,11 @@ const Contact = () => {
 
   return (
     <Layout>
+      <PageBanner 
+        title="Get in Touch"
+        subtitle="Join us in shaping a greener, more sustainable future"
+        backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+      />
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">

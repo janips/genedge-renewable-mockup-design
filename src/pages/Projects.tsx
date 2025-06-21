@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import Layout from '../components/Layout';
+import PageBanner from '../components/PageBanner';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table";
 
 const Projects = () => {
@@ -208,13 +209,18 @@ const Projects = () => {
 
   return (
     <Layout>
-      <div className="pt-24 pb-16 bg-gray-50">
+      <PageBanner 
+        title="Our Project Portfolio"
+        subtitle="Delivering Clean Energy Solutions Across India"
+        backgroundImage="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+      />
+      <div className="py-16 bg-gray-50 min-h-screen">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-8">Our Project Portfolio</h1>
-
           <div className="max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-md mb-10">
-              <p className="text-gray-700 mb-6">At Genedge Renewables, We’re already making a measurable impact. Our early projects reflect our commitment to accessible, reliable, and sustainable energy. Each project is a step toward a cleaner, more resilient energy future—and a proof of concept for what we’re building at scale.</p>
+              <p className="text-gray-700 leading-relaxed text-center">
+                At Genedge Renewables, We're already making a measurable impact. Our early projects reflect our commitment to accessible, reliable, and sustainable energy. Each project is a step toward a cleaner, more resilient energy future—and a proof of concept for what we're building at scale.
+              </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md overflow-x-auto">

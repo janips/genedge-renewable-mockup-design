@@ -9,7 +9,7 @@ const About = () => {
       <PageBanner 
         title="Company"
         subtitle="Leading India's Clean Energy Revolution"
-        backgroundImage="/lovable-uploads/8dd7cbb8-baa7-458d-9f87-d2b80406bad5.png"
+        backgroundImage="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
       />
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">

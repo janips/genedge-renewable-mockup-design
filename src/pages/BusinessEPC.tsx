@@ -9,7 +9,7 @@ const BusinessEPC = () => {
       <PageBanner 
         title="EPC Business"
         subtitle="Building Excellence in Renewable Infrastructure"
-        backgroundImage="/lovable-uploads/97762ca3-a496-4200-a78c-e0660922c660.png"
+        backgroundImage="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
       />
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
