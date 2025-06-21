@@ -22,7 +22,7 @@ const AboutTeam = () => {
                   </a>
                 </div>
                 <p className="text-gray-700 italic mb-4">Managing Director</p>
-                <p className="text-gray-700">Mr. Ravindra Agrawal has track record of more than 28 years, successfully handling Gas Trading, Transmission, City Gas Distribution and Business Development in midstream and downstream segments of natural gas and has served as Director and CEO of GIGL. 
+                <p className="text-gray-700 text-justify">Mr. Ravindra Agrawal has track record of more than 28 years, successfully handling Gas Trading, Transmission, City Gas Distribution and Business Development in midstream and downstream segments of natural gas and has served as Director and CEO of GIGL. 
 
 
 Beyond the gas sector, his keen interests are in the Renewable energy space as well. With the techno-commercial skills, business acumen, and wisdom of project management honed over the last three decades, he has set his eyes to replicate the success stories of gas industry to the renewable industry.</p>
@@ -31,7 +31,7 @@ Beyond the gas sector, his keen interests are in the Renewable energy space as w
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2">Badri Mahapatra</h3>
                 <p className="text-gray-700 italic mb-4">Promoter Director</p>
-                <p className="text-gray-700">Mr. Badri Mahapatra is a Management Graduate from Symbiosis Institute of Management, Pune and has over 28 years of experience across private sector firms, public sector / government organizations, academic institutions and industry networks. He was handling strategic and key positions in Gujarat Infrastructure Development Board (GIDB) and Gujarat Venture Finance Limited. As an entrepreneur, Mr. Mahapatra has mentored several companies in various areas such as Management Consultancy, Entry Advisory, Micro Finance, Natural Gas Consultancy, Trading and Manufacturing. He has also served as Executive Director at TiE (The Indus Entrepreneurs) Gujarat Chapter to promote and facilitate the entrepreneurship aspects in the State of Gujarat.</p>
+                <p className="text-gray-700 text-justify">Mr. Badri Mahapatra is a Management Graduate from Symbiosis Institute of Management, Pune and has over 28 years of experience across private sector firms, public sector / government organizations, academic institutions and industry networks. He was handling strategic and key positions in Gujarat Infrastructure Development Board (GIDB) and Gujarat Venture Finance Limited. As an entrepreneur, Mr. Mahapatra has mentored several companies in various areas such as Management Consultancy, Entry Advisory, Micro Finance, Natural Gas Consultancy, Trading and Manufacturing. He has also served as Executive Director at TiE (The Indus Entrepreneurs) Gujarat Chapter to promote and facilitate the entrepreneurship aspects in the State of Gujarat.</p>
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -42,7 +42,7 @@ Beyond the gas sector, his keen interests are in the Renewable energy space as w
                   </a>
                 </div>
                 
-                <p className="text-gray-700">Mr. Sunil Sancheti, a graduate in Electronics & Communication Engineering with an MBA in Finance, brings over 11 years of diverse experience across both private and government sectors. He has held key positions at prominent organizations such as GSPL India Gasnet Limited, Adani Green Energy Limited, and EDF Renewables India Pvt. Ltd. 
+                <p className="text-gray-700 text-justify">Mr. Sunil Sancheti, a graduate in Electronics & Communication Engineering with an MBA in Finance, brings over 11 years of diverse experience across both private and government sectors. He has held key positions at prominent organizations such as GSPL India Gasnet Limited, Adani Green Energy Limited, and EDF Renewables India Pvt. Ltd. 
 
 
 Sunil specializes in project finance and fund-raising for large-scale infrastructure initiatives in the natural gas and renewable energy sectors. He has successfully led efforts to raise debt funding through banks and NBFCs, demonstrating a strong understanding of financial structuring, risk assessment, and stakeholder management in capital-intensive projects.</p>
@@ -56,7 +56,7 @@ Sunil specializes in project finance and fund-raising for large-scale infrastruc
                   </a>
                 </div>
                 
-                <p className="text-gray-700">Mr. Ankit Chanpura, who holds a Bachelor's in Electrical Engineering and an MBA in Energy and infrastructure, brings over 16 years of diverse experience in the energy sector. 
+                <p className="text-gray-700 text-justify">Mr. Ankit Chanpura, who holds a Bachelor's in Electrical Engineering and an MBA in Energy and infrastructure, brings over 16 years of diverse experience in the energy sector. 
 
 
 He has held key roles at leading organizations, including Adani Group, Torrent Power Limited, IL&FS Energy Development Company Ltd., and Piramal Glass Ltd. 
@@ -73,7 +73,7 @@ His expertise covers procurement, contracts, supply chain development, business 
                   </a>
                 </div>
                 
-                <p className="text-gray-700">Mr. Abhijeet Kumar is a seasoned project management professional with over 13 years of experience in delivering large-scale, high-impact projects across the renewable energy and infrastructure sectors. He has consistently demonstrated the ability to lead cross-functional teams across diverse geographies, ensuring projects are completed efficiently on time, within budget, and to the highest standards. His expertise spans the full project lifecycle—from planning and execution to stakeholder coordination and regulatory compliance. With a deep understanding of both technical and project management aspects, Abhijeet excels in navigating complex challenges and driving sustainable, results-oriented outcomes.</p>
+                <p className="text-gray-700 text-justify">Mr. Abhijeet Kumar is a seasoned project management professional with over 13 years of experience in delivering large-scale, high-impact projects across the renewable energy and infrastructure sectors. He has consistently demonstrated the ability to lead cross-functional teams across diverse geographies, ensuring projects are completed efficiently on time, within budget, and to the highest standards. His expertise spans the full project lifecycle—from planning and execution to stakeholder coordination and regulatory compliance. With a deep understanding of both technical and project management aspects, Abhijeet excels in navigating complex challenges and driving sustainable, results-oriented outcomes.</p>
               </div>
             </div>
           </div>
