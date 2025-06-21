@@ -18,8 +18,15 @@ const BusinessEPC = () => {
               <div className="p-3 bg-gray-100 rounded-full">
                 <Wrench className="h-8 w-8 text-gray-700" />
               </div>
-              <h2 className="text-2xl font-semibold ml-4">Core Services</h2>
+              
             </div>
+            <p className="text-gray-700 mb-6">
+              As India's energy sector shifts toward round-the-clock reliability, Genedge is preparing to lead 
+              in the Battery Energy Storage Systems (BESS) space—developing and bidding for both Standalone 
+              Storage and Firm & Dispatchable Renewable Energy (FDRE) projects.
+            </p>
+
+            <h2 className="text-2xl font-semibold ml-4">Core Services</h2>
             
             {/* Core Services Cards (Graphical Representation) */}
             <div className="grid md:grid-cols-3 gap-6 mb-10">
