@@ -1,16 +1,10 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
 import { Wind } from 'lucide-react';
-
 const BusinessUtility = () => {
   return <Layout>
-      <PageBanner 
-        title="Utility Scale Projects"
-        subtitle="Powering the Grid. Supporting National Goals"
-        backgroundImage="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-      />
+      <PageBanner title="Utility Scale Projects" subtitle="Powering the Grid. Supporting National Goals" backgroundImage="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
@@ -21,13 +15,10 @@ const BusinessUtility = () => {
               <h2 className="text-2xl font-semibold ml-4">Large Utility-Scale Projects</h2>
             </div>
             
-            <p className="text-gray-700 mb-6">
-              At Genedge Renewables, our utility-scale strategy centers on active participation in competitive bidding 
-              processes launched by major government and public sector agencies such as GUVNL (Gujarat Urja Vikas Nigam Ltd.), 
-              and other nodal bodies across India. We leverage our technical expertise, financial strength, and execution 
-              capability to secure and deliver high-quality renewable energy projects that contribute significantly to the 
-              national grid.
-            </p>
+            <p className="text-gray-700 mb-6">At Genedge Renewables, our utility-scale strategy centers on active participation in competitive bidding processes launched by major government and public sector agencies such as GUVNL (Gujarat Urja Vikas Nigam Ltd.), and other nodal bodies across India. 
+
+
+We leverage our technical expertise, financial strength, and execution capability to secure and deliver high-quality renewable energy projects that contribute significantly to the national grid.</p>
             
             <h3 className="text-xl font-semibold mb-4">Strategic Approach</h3>
             <ul className="space-y-3 mb-8">
@@ -91,5 +82,4 @@ const BusinessUtility = () => {
       </div>
     </Layout>;
 };
-
 export default BusinessUtility;
