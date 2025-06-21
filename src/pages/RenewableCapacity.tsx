@@ -52,7 +52,7 @@ const RenewableCapacity = () => {
                   </TableRow>
                   <TableRow className="font-bold">
                     <TableCell>Total RE Capacity</TableCell>
-                    <TableCell>35,896</TableCell>
+                    <TableCell>35,894</TableCell>
                     <TableCell>167,709.53</TableCell>
                   </TableRow>
                 </TableBody>
