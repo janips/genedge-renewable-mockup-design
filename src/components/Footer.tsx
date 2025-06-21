@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 const Footer: React.FC = () => {
-  return <footer className="bg-white text-genedge-dark-gray pt-16 pb-8 py-[20px]">
+  return <footer className="bg-white text-genedge-dark-gray pt-16 pb-8 py-[10px]">
       {/* Divider line at top of footer */}
       <hr className="border-t border-genedge-light-gray mb-8" />
       <div className="container mx-auto px-4">
