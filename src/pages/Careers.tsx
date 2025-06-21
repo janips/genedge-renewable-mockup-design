@@ -10,7 +10,7 @@ const Careers = () => {
       <PageBanner 
         title="Careers"
         subtitle="Be part of something powerful"
-        backgroundImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundImage="/lovable-uploads/bd8ce70a-3cb9-4642-9f6d-b171ff4994c3.png"
       />
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
