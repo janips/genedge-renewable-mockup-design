@@ -5,7 +5,7 @@ import { Linkedin } from 'lucide-react';
 const AboutTeam = () => {
   return <Layout>
       <PageBanner title="Management Team" subtitle="Leadership Driving Clean Energy Innovation" backgroundImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
-      <div className="pt-8 pb-16 bg-gray-50">
+      <div className="pt-8 pb-16 bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <p className="mb-6 text-gray-700">
