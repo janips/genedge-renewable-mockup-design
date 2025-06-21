@@ -1,16 +1,9 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
-
 const About = () => {
-  return (
-    <Layout>
-      <PageBanner 
-        title="Company" 
-        subtitle="Leading India's Clean Energy Revolution" 
-        backgroundImage="/lovable-uploads/3802b10c-0aac-4dec-afbe-12108ed7fdf6.png"
-        textAlign="left"
-      />
+  return <Layout>
+      <PageBanner title="Company" subtitle="Leading India's Clean Energy Revolution" backgroundImage="/lovable-uploads/3802b10c-0aac-4dec-afbe-12108ed7fdf6.png" textAlign="left" />
       <div className="bg-gray-50 py-[10px]">
         <div className="container mx-auto px-4">
           {/* Company Overview - Moved to top */}
@@ -48,23 +41,7 @@ const About = () => {
               </div>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md mb-8">
-              <h2 className="text-2xl font-bold text-center mb-6">Our Core Values</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold text-genedge-green mb-2">Innovation</h3>
-                  <p className="text-gray-700">Embracing cutting-edge technologies for sustainable solutions</p>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold text-genedge-orange mb-2">Integrity</h3>
-                  <p className="text-gray-700">Conducting business with transparency and ethical practices</p>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold text-genedge-green mb-2">Excellence</h3>
-                  <p className="text-gray-700">Delivering superior quality in all our endeavors</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
 
           {/* Who We Are Section */}
@@ -107,8 +84,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
