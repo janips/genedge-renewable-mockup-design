@@ -108,16 +108,18 @@ const CorporateGovernance = () => {
               <p className="text-gray-700 leading-relaxed mb-6">
                 At Genedge, our commitment to sustainability goes beyond clean energy—we believe in ethical leadership and responsible business practices. Our Code of Conduct is a cornerstone of our corporate governance framework, guiding how we operate, interact, and grow with integrity.
               </p>
-              
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <div className="mb-6">
-                <h3 className="text-xl font-semibold text-genedge-orange mb-4">Our Commitment</h3>
+                <h3 className="text-2xl font-bold text-genedge-orange mb-6">Our Commitment</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   We are dedicated to upholding the highest standards of ethics and accountability. Our Code of Conduct ensures every team member—from board directors to field technicians—acts with honesty, respect, and transparency in all business activities.
                 </p>
               </div>
-              
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <div>
-                <h3 className="text-xl font-semibold text-genedge-green mb-4">Environmental & Social Management</h3>
+                <h3 className="text-2xl font-bold text-genedge-green mb-6">Environmental & Social Management</h3>
                 <p className="text-gray-700 leading-relaxed">
                   We recognize that renewable energy is not only about power—it's about people and the planet. Our Environmental & Social Management (ESM) approach ensures that our operations promote sustainable development, protect ecosystems, and respect the rights and well-being of communities.
                 </p>
