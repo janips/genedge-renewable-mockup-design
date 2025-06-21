@@ -28,27 +28,27 @@ const RenewableCapacity = () => {
                   <TableRow>
                     <TableCell>Solar Power</TableCell>
                     <TableCell>3,744</TableCell>
-                    <TableCell>102,566.02</TableCell>
+                    <TableCell>102,566</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>Wind Power</TableCell>
-                    <TableCell>23,444.44</TableCell>
-                    <TableCell>48,588.56</TableCell>
+                    <TableCell>23,444</TableCell>
+                    <TableCell>48,588</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>Small Hydro Power</TableCell>
-                    <TableCell>4,161.90</TableCell>
-                    <TableCell>5,100.55</TableCell>
+                    <TableCell>4,161</TableCell>
+                    <TableCell>5,100</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>Biomass Power/Cogeneration</TableCell>
-                    <TableCell>4,418.55</TableCell>
-                    <TableCell>10,652.45</TableCell>
+                    <TableCell>4,418</TableCell>
+                    <TableCell>10,652</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>Waste-to-Energy</TableCell>
-                    <TableCell>127.08</TableCell>
-                    <TableCell>801.95</TableCell>
+                    <TableCell>127</TableCell>
+                    <TableCell>801</TableCell>
                   </TableRow>
                   <TableRow className="font-bold">
                     <TableCell>Total RE Capacity</TableCell>
