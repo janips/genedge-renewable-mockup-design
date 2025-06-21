@@ -14,20 +14,15 @@ const BusinessEPC = () => {
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
-            <div className="flex items-center mb-6">
+            <p className="text-gray-700 mb-6">
+              At Genedge Renewables, our EPC (Engineering, Procurement, and Construction) services are designed to deliver comprehensive, end-to-end renewable energy project execution. We act as a one-stop solution partner for solar, hybrid, and emerging energy systems—from concept to commissioning.
+            </p>
+            <div className="flex items-center mb-6">  
               <div className="p-3 bg-gray-100 rounded-full">
                 <Wrench className="h-8 w-8 text-gray-700" />
               </div>
-              
+              <h2 className="text-2xl font-semibold ml-4">Core Services</h2>
             </div>
-            <p className="text-gray-700 mb-6">
-              As India's energy sector shifts toward round-the-clock reliability, Genedge is preparing to lead 
-              in the Battery Energy Storage Systems (BESS) space—developing and bidding for both Standalone 
-              Storage and Firm & Dispatchable Renewable Energy (FDRE) projects.
-            </p>
-
-            <h2 className="text-2xl font-semibold ml-4">Core Services</h2>
-            
             {/* Core Services Cards (Graphical Representation) */}
             <div className="grid md:grid-cols-3 gap-6 mb-10">
               <div className="text-center p-5 bg-gray-50 rounded-lg">
