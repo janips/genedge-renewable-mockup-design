@@ -1,16 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
-
 const CorporateGovernance = () => {
-  return (
-    <Layout>
-      <PageBanner 
-        title="Corporate Governance"
-        subtitle="Ethical Leadership and Responsible Business Practices"
-        backgroundImage="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-      />
-      <div className="py-16 bg-gray-50">
+  return <Layout>
+      <PageBanner title="Corporate Governance" subtitle="Ethical Leadership and Responsible Business Practices" backgroundImage="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
+      <div className="bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Corporate Governance</h1>
           
@@ -128,8 +122,6 @@ const CorporateGovernance = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default CorporateGovernance;
