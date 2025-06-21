@@ -1,16 +1,10 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
 import { Linkedin } from 'lucide-react';
-
 const AboutTeam = () => {
   return <Layout>
-      <PageBanner 
-        title="Management Team"
-        subtitle="Leadership Driving Clean Energy Innovation"
-        backgroundImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-      />
+      <PageBanner title="Management Team" subtitle="Leadership Driving Clean Energy Innovation" backgroundImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
@@ -56,7 +50,7 @@ He has also served as Executive Director at TiE (The Indus Entrepreneurs) Gujara
                     <Linkedin size={24} />
                   </a>
                 </div>
-                <p className="text-gray-700 italic mb-4">Designation to be written</p>
+                
                 <p className="text-gray-700">Mr. Sunil Sancheti, a graduate in Electronics & Communication Engineering with an MBA in Finance, brings over 11 years of diverse experience across both private and government sectors. He has held key positions at prominent organizations such as GSPL India Gasnet Limited, Adani Green Energy Limited, and EDF Renewables India Pvt. Ltd. 
 
 
@@ -70,7 +64,7 @@ Sunil specializes in project finance and fund-raising for large-scale infrastruc
                     <Linkedin size={24} />
                   </a>
                 </div>
-                <p className="text-gray-700 italic mb-4">Designation to be written</p>
+                
                 <p className="text-gray-700">Mr. Ankit Chanpura, who holds a Bachelor's in Electrical Engineering and an MBA in Energy and infrastructure, brings over 16 years of diverse experience in the energy sector. 
 
 
@@ -87,7 +81,7 @@ His expertise covers procurement, contracts, supply chain development, business 
                     <Linkedin size={24} />
                   </a>
                 </div>
-                <p className="text-gray-700 italic mb-4">Project Management Professional</p>
+                
                 <p className="text-gray-700">Mr. Abhijeet Kumar is a seasoned project management professional with over 13 years of experience in delivering large-scale, high-impact projects across the renewable energy and infrastructure sectors. He has consistently demonstrated the ability to lead cross-functional teams across diverse geographies, ensuring projects are completed efficiently on time, within budget, and to the highest standards. His expertise spans the full project lifecycle—from planning and execution to stakeholder coordination and regulatory compliance. With a deep understanding of both technical and project management aspects, Abhijeet excels in navigating complex challenges and driving sustainable, results-oriented outcomes.</p>
               </div>
             </div>
@@ -96,5 +90,4 @@ His expertise covers procurement, contracts, supply chain development, business 
       </div>
     </Layout>;
 };
-
 export default AboutTeam;
