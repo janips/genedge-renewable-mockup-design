@@ -1,14 +1,18 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import PageBanner from '../components/PageBanner';
 
 const About = () => {
   return (
     <Layout>
+      <PageBanner 
+        title="Company"
+        subtitle="Leading India's Clean Energy Revolution"
+        backgroundImage="/lovable-uploads/8dd7cbb8-baa7-458d-9f87-d2b80406bad5.png"
+      />
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-8">Company</h1>
-          
           {/* Company Overview - Moved to top */}
           <div className="max-w-4xl mx-auto mb-12">
             <div className="bg-white p-8 rounded-lg shadow-md">

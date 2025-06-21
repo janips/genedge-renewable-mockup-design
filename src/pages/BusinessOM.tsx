@@ -1,16 +1,18 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import PageBanner from '../components/PageBanner';
 import { Settings } from 'lucide-react';
 
 const BusinessOM = () => {
-  return (
-    <Layout>
-      <div className="pt-24 pb-16 bg-gray-50">
+  return <Layout>
+      <PageBanner 
+        title="O&M Business"
+        subtitle="Maximizing Performance. Ensuring Longevity"
+        backgroundImage="/lovable-uploads/01d55dc9-543b-41af-8af2-6b0ae3e4fc4d.png"
+      />
+      <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-2">O&M Business</h1>
-          <p className="text-xl text-center text-genedge-orange mb-8">Maximizing Performance. Ensuring Longevity</p>
-          
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <div className="flex items-center mb-6">
               <div className="p-3 bg-teal-100 rounded-full">
@@ -84,8 +86,7 @@ const BusinessOM = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
 
 export default BusinessOM;

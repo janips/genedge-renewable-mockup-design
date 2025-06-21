@@ -1,6 +1,6 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
+import PageBanner from '../components/PageBanner';
 
 // Manually uploaded images (excluding obvious logo files)
 // If you upload more in future, add their src/alt here.
@@ -56,12 +56,13 @@ const uploadedImages = [{
 
 const Gallery = () => {
   return <Layout>
+      <PageBanner 
+        title="Project Gallery"
+        subtitle="Explore Our Renewable Energy Projects"
+        backgroundImage="/lovable-uploads/ae04a0b0-3972-4523-9d84-51eb46096c6a.png"
+      />
       <div className="py-16 bg-gray-50 min-h-screen">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-2">
-            Project Gallery&nbsp;
-            
-          </h1>
           <div className="max-w-6xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <p className="text-gray-700 leading-relaxed text-center">

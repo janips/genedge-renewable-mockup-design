@@ -1,16 +1,18 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import PageBanner from '../components/PageBanner';
 import { Battery } from 'lucide-react';
 
 const BusinessBess = () => {
-  return (
-    <Layout>
-      <div className="pt-24 pb-16 bg-gray-50">
+  return <Layout>
+      <PageBanner 
+        title="Battery Energy Storage Systems"
+        subtitle="Storing Power. Strengthening the Grid"
+        backgroundImage="/lovable-uploads/c77a4bd4-0e26-452e-834c-64ba1d8ce410.png"
+      />
+      <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-2">Battery Energy Storage Systems</h1>
-          <p className="text-xl text-center text-genedge-orange mb-8">Storing Power. Strengthening the Grid</p>
-          
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <div className="flex items-center mb-6">
               <div className="p-3 bg-purple-100 rounded-full">
@@ -84,8 +86,7 @@ const BusinessBess = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
 
 export default BusinessBess;

@@ -1,16 +1,18 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import PageBanner from '../components/PageBanner';
 import { Wind } from 'lucide-react';
 
 const BusinessUtility = () => {
-  return (
-    <Layout>
-      <div className="pt-24 pb-16 bg-gray-50">
+  return <Layout>
+      <PageBanner 
+        title="Utility Scale Projects"
+        subtitle="Powering the Grid. Supporting National Goals"
+        backgroundImage="/lovable-uploads/4b71101e-2e4b-4968-9a02-1492571fd4d7.png"
+      />
+      <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-center mb-2">Utility Scale Projects</h1>
-          <p className="text-xl text-center text-genedge-orange mb-8">Powering the Grid. Supporting National Goals</p>
-          
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <div className="flex items-center mb-6">
               <div className="p-3 bg-green-100 rounded-full">
@@ -87,8 +89,7 @@ const BusinessUtility = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
 
 export default BusinessUtility;

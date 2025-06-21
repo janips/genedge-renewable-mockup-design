@@ -1,15 +1,20 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import PageBanner from '../components/PageBanner';
 import { Mail, Zap, Users, TrendingUp, Heart } from 'lucide-react';
 
 const Careers = () => {
   return (
     <Layout>
-      <div className="pt-24 pb-16 bg-gray-50">
+      <PageBanner 
+        title="Careers"
+        subtitle="Be part of something powerful"
+        backgroundImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+      />
+      <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold mb-6">Be part of something powerful.</h1>
             <p className="text-lg text-gray-700 leading-relaxed">
               At Genedge, we're not just building a company, we are building a clean energy future. 
               As a fast-growing renewable energy startup, we are driven by innovation, urgency, and a 
