@@ -1,11 +1,8 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
-
 const Footer: React.FC = () => {
-  return (
-    <footer className="bg-white text-genedge-dark-gray pt-16 pb-8">
+  return <footer className="bg-white text-genedge-dark-gray pt-16 pb-8 py-[20px]">
       {/* Divider line at top of footer */}
       <hr className="border-t border-genedge-light-gray mb-8" />
       <div className="container mx-auto px-4">
@@ -13,11 +10,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img 
-                alt="Logo" 
-                className="h-16 w-auto md:h-20"
-                src="/lovable-uploads/977ca71d-e725-4fa7-9d87-e1490c47cc1a.png" 
-              />
+              <img alt="Logo" className="h-16 w-auto md:h-20" src="/lovable-uploads/977ca71d-e725-4fa7-9d87-e1490c47cc1a.png" />
             </Link>
             <p className="text-genedge-dark-gray mb-4 text-sm">
               Empowering India through Clean Energy
@@ -88,8 +81,6 @@ Ambali Road, Ashok Vatika, Ahmedabad.</span>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
