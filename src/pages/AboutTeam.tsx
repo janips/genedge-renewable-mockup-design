@@ -31,16 +31,7 @@ Beyond the gas sector, his keen interests are in the Renewable energy space as w
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2">Badri Mahapatra</h3>
                 <p className="text-gray-700 italic mb-4">Promoter Director</p>
-                <p className="text-gray-700">Mr. Badri Mahapatra (Promoter Director) is a Management Graduate from Symbiosis Institute of Management, Pune and has over 28 years of experience across private sector firms, public sector / government organizations, academic institutions and industry networks. 
-
-
-He was handling strategic and key positions in Gujarat Infrastructure Development Board (GIDB) and Gujarat Venture Finance Limited. 
-
-
-As an entrepreneur, Mr. Mahapatra has mentored several companies in various areas such as Management Consultancy, Entry Advisory, Micro Finance, Natural Gas Consultancy, Trading and Manufacturing. 
-
-
-He has also served as Executive Director at TiE (The Indus Entrepreneurs) Gujarat Chapter to promote and facilitate the entrepreneurship aspects in the State of Gujarat.</p>
+                <p className="text-gray-700">Mr. Badri Mahapatra is a Management Graduate from Symbiosis Institute of Management, Pune and has over 28 years of experience across private sector firms, public sector / government organizations, academic institutions and industry networks. He was handling strategic and key positions in Gujarat Infrastructure Development Board (GIDB) and Gujarat Venture Finance Limited. As an entrepreneur, Mr. Mahapatra has mentored several companies in various areas such as Management Consultancy, Entry Advisory, Micro Finance, Natural Gas Consultancy, Trading and Manufacturing. He has also served as Executive Director at TiE (The Indus Entrepreneurs) Gujarat Chapter to promote and facilitate the entrepreneurship aspects in the State of Gujarat.</p>
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg">
