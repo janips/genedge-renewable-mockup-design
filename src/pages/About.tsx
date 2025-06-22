@@ -4,7 +4,7 @@ import PageBanner from '../components/PageBanner';
 const About = () => {
   return <Layout>
       <PageBanner title="Company" subtitle="Leading India's Clean Energy Revolution" backgroundImage="/lovable-uploads/e1eb5f69-db62-43ca-9eec-f3677f7858fd.png" textAlign="left" />
-      <div className="bg-gray-50 py-[10px]">
+      <div className="bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           {/* Company Overview - Moved to top */}
           <div className="max-w-4xl mx-auto mb-12">
