@@ -1,11 +1,8 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
-
 const Footer: React.FC = () => {
-  return (
-    <footer className="bg-gray-100 text-genedge-dark-gray pt-16 pb-8 py-[10px] border-t-4 border-genedge-green">
+  return <footer className="bg-gray-100 text-genedge-dark-gray pt-16 pb-8 py-[10px] border-t-4 border-genedge-green">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -24,8 +21,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={16} className="mr-2 text-genedge-orange mt-1 flex-shrink-0" />
-                <span className="text-genedge-dark-gray text-sm">Genedge Renewable Private Limited, A306, Navratna Corporate Park,
-Ambali Road, Ashok Vatika, Ahmedabad.</span>
+                <span className="text-genedge-dark-gray text-sm">Genedge Renewables Private Limited, A306, Navratna Corporate Park, Ambali Road, Ashok Vatika, Ahmedabad.</span>
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2 text-genedge-orange flex-shrink-0" />
@@ -82,8 +78,6 @@ Ambali Road, Ashok Vatika, Ahmedabad.</span>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
