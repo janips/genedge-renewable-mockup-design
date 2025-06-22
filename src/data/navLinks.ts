@@ -8,7 +8,6 @@ export const navLinks: NavLinkType[] = [
     path: "/about",
     submenu: [
       { title: "Company", path: "/about" },
-      { title: "What We Do", path: "/about/what-we-do" },
       { title: "Management Team", path: "/about/team" },
       { title: "Parent Company", path: "/about/parent" }
     ]

@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,7 +11,6 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import VisionMission from "./pages/VisionMission";
 import WhoWeAre from "./pages/WhoWeAre";
-import WhatWeDo from "./pages/WhatWeDo";
 import AboutTeam from "./pages/AboutTeam";
 import AboutParent from "./pages/AboutParent";
 import RenewableSector from "./pages/RenewableSector";
@@ -49,7 +49,6 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/about/vision-mission" element={<VisionMission />} />
           <Route path="/about/who-we-are" element={<WhoWeAre />} />
-          <Route path="/about/what-we-do" element={<WhatWeDo />} />
           <Route path="/about/team" element={<AboutTeam />} />
           <Route path="/about/parent" element={<AboutParent />} />
           <Route path="/renewable-sector" element={<RenewableSector />} />
