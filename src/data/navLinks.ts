@@ -25,7 +25,7 @@ export const navLinks: NavLinkType[] = [
     title: "Our Businesses", 
     path: "/businesses",
     submenu: [
-      { title: "Strategic Approach", path: "/businesses" },
+      { title: "Introduction", path: "/businesses" },
       { title: "PM Kusum Projects", path: "/businesses/kusum" },
       { title: "Large Utility-Scale Projects", path: "/businesses/utility" },
       { title: "C&I Projects", path: "/businesses/commercial" },
@@ -38,7 +38,7 @@ export const navLinks: NavLinkType[] = [
     title: "Projects", 
     path: "/projects",
     submenu: [
-      { title: "Existing Project Portfolio", path: "/projects" },
+      { title: "Portfolio", path: "/projects" },
       { title: "Project Map", path: "/projects/map" },
       { title: "Gallery", path: "/gallery" }
     ]
