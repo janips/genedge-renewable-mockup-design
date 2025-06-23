@@ -53,11 +53,11 @@ const BusinessEPC = () => {
             {/* More Services (Commissioning & Regulatory) */}
             <div className="grid md:grid-cols-2 gap-6 mb-10">
               <div className="text-center p-5 bg-gray-50 rounded-lg">
-                <div className="h-16 w-16 w-16 rounded-full bg-genedge-orange flex items-center justify-center text-white mr-4">
+                <div className="mx-auto h-16 w-16 rounded-full bg-genedge-orange flex items-center justify-center text-white mr-4">
                   <Share2 className="w-7 h-7" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Commissioning &amp; Grid Synchronization</h4>
+                  <h3 className="font-semibold mb-2">Commissioning &amp; Grid Synchronization</h3>
                   <p className="text-gray-700 text-sm">
                     Ensuring project is synchronized to the DISCOM/grid infrastructure efficiently
                   </p>
