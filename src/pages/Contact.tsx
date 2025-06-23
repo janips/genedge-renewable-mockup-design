@@ -46,9 +46,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-gray-700">
+                      Genedge Renewable Private Limited,<br />
                       A-306, Navratna Corporate Park,<br />
                       Ambali Road, Ashok Vatika,<br />
-                      Ahmedabad
+                      Ahmedabad.
                     </p>
                   </div>
                 </div>
