@@ -17,7 +17,7 @@ const BusinessVerticals: React.FC = () => {
     title: "Utility Scale Projects",
     subtitle: "Powering the Grid. Supporting National Goals",
     description: "Our large-scale solar and wind energy projects feed directly into the national grid, helping utilities meet renewable purchase obligations and contributing to India's ambitious clean energy targets.",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
     linkUrl: "/businesses/utility"
   }, {
     id: "commercial",
@@ -25,7 +25,7 @@ const BusinessVerticals: React.FC = () => {
     title: "C&I Solutions",
     subtitle: "Energy Solutions for Forward-Thinking Businesses",
     description: "We provide tailored renewable energy systems for commercial and industrial clients, helping businesses reduce operational costs and carbon footprints through custom solar solutions.",
-    image: "https://images.unsplash.com/photo-1611365892117-00d03937791b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
     linkUrl: "/businesses/commercial"
   }, {
     id: "bess",
