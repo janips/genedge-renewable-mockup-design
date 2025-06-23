@@ -13,7 +13,7 @@ const AboutParent = () => {
             
             <p className="mb-6 text-gray-700">At EERPL, we are proud to expand into the thriving sector of renewable energy, marking a significant milestone in our journey towards a sustainable future. With a legacy built on excellence in natural gas trading, we are now leveraging our expertise to embrace the burgeoning opportunities in solar and wind energy generation.</p>
 
-            <p className="mb-6 text-gray-700 ">More details can be found at <a href="https://www.enertechfuelsolutions.com/" target="_blank"> www.enertechfuelsolutions.com</a></p>
+            <p className="mb-6 text-gray-700 ">More details can be found at <a style="underline" href="https://www.enertechfuelsolutions.com/" target="_blank"> www.enertechfuelsolutions.com</a></p>
 
           </div>
         </div>
