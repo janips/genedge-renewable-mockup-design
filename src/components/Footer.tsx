@@ -21,9 +21,12 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={16} className="mr-2 text-genedge-orange mt-1 flex-shrink-0" />
-                <span className="text-genedge-dark-gray text-sm">Genedge Renewables Private Limited, A306, Navratna Corporate Park,
-Ambali Road, Ashok Vatika,
-Ahmedabad.</span>
+                <span className="text-genedge-dark-gray text-sm">
+                  Genedge Renewables Private Limited, <br /> 
+                  A306, Navratna Corporate Park, <br />
+                  Ambali Road, Ashok Vatika, <br />
+                  Ahmedabad.
+                </span>
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2 text-genedge-orange flex-shrink-0" />
