@@ -35,7 +35,6 @@ const Contact = () => {
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl font-bold mb-6">Get in Touch</h1>
             <p className="text-lg text-gray-700 leading-relaxed">
               Join us in shaping a greener, more sustainable and inclusive future. Whether you're a 
               potential investor, partner, or stakeholder, we invite you to explore the possibilities 
