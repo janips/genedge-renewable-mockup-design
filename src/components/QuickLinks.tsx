@@ -1,6 +1,8 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Info, Wind, Briefcase, PhoneCall } from "lucide-react";
+
 const QuickLinks: React.FC = () => {
   const links = [{
     icon: <Info size={32} />,
@@ -27,6 +29,26 @@ const QuickLinks: React.FC = () => {
     path: "/contact",
     color: "bg-gradient-to-br from-purple-500 to-purple-700"
   }];
-  return;
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-16 px-4">
+      {links.map((link, index) => (
+        <Link
+          key={index}
+          to={link.path}
+          className={`${link.color} p-6 rounded-lg text-white hover:transform hover:scale-105 transition-all duration-300 shadow-lg`}
+        >
+          <div className="flex flex-col items-center text-center">
+            <div className="mb-4">
+              {link.icon}
+            </div>
+            <h3 className="text-xl font-bold mb-2">{link.title}</h3>
+            <p className="text-sm opacity-90">{link.description}</p>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
 };
+
 export default QuickLinks;
