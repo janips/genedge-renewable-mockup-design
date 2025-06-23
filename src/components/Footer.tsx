@@ -72,7 +72,7 @@ Ahmedabad.</span>
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-genedge-dark-gray text-sm mb-4 md:mb-0">
-            © 2025 Genedge Renewables. All rights reserved.
+            © 2025 Genedge Renewables Private Limited. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy-policy" className="text-genedge-dark-gray text-sm hover:text-genedge-green transition-colors">Privacy Policy</Link>
