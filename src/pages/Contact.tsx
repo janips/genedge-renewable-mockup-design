@@ -8,7 +8,6 @@ import { Textarea } from '../components/ui/textarea';
 import { Button } from '../components/ui/button';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../components/ui/form';
 import { useForm } from 'react-hook-form';
-
 const Contact = () => {
   const form = useForm({
     defaultValues: {
@@ -19,20 +18,13 @@ const Contact = () => {
       message: ''
     }
   });
-
   const onSubmit = (data: any) => {
     console.log('Form submitted:', data);
     // Handle form submission here
   };
-
-  return (
-    <Layout>
-      <PageBanner 
-        title="Get in Touch"
-        subtitle="Join us in shaping a greener, more sustainable future"
-        backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-      />
-      <div className="pt-24 pb-16 bg-gray-50">
+  return <Layout>
+      <PageBanner title="Get in Touch" subtitle="Join us in shaping a greener, more sustainable future" backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
+      <div className="pt-24 pb-16 bg-gray-50 py-[30px]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -85,12 +77,7 @@ const Contact = () => {
                   <Linkedin className="h-6 w-6 text-genedge-green mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold mb-1">LinkedIn</h3>
-                    <a 
-                      href="https://www.linkedin.com/company/genedge-renewables-private-limited/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-genedge-green hover:underline"
-                    >
+                    <a href="https://www.linkedin.com/company/genedge-renewables-private-limited/" target="_blank" rel="noopener noreferrer" className="text-genedge-green hover:underline">
                       Genedge Renewables Private Limited
                     </a>
                   </div>
@@ -106,80 +93,55 @@ const Contact = () => {
               <CardContent>
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                    <FormField
-                      control={form.control}
-                      name="name"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="name" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel>Name *</FormLabel>
                           <FormControl>
                             <Input placeholder="Your full name" {...field} required />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="email" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel>Email *</FormLabel>
                           <FormControl>
                             <Input type="email" placeholder="your.email@example.com" {...field} required />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
-                    <FormField
-                      control={form.control}
-                      name="phone"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="phone" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel>Phone</FormLabel>
                           <FormControl>
                             <Input type="tel" placeholder="Your phone number" {...field} />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
-                    <FormField
-                      control={form.control}
-                      name="company"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="company" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel>Company/Organization</FormLabel>
                           <FormControl>
                             <Input placeholder="Your company name" {...field} />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
-                    <FormField
-                      control={form.control}
-                      name="message"
-                      render={({ field }) => (
-                        <FormItem>
+                    <FormField control={form.control} name="message" render={({
+                    field
+                  }) => <FormItem>
                           <FormLabel>Message *</FormLabel>
                           <FormControl>
-                            <Textarea 
-                              placeholder="Tell us about your project, partnership opportunity, or inquiry..."
-                              className="min-h-[120px]"
-                              {...field}
-                              required
-                            />
+                            <Textarea placeholder="Tell us about your project, partnership opportunity, or inquiry..." className="min-h-[120px]" {...field} required />
                           </FormControl>
                           <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                        </FormItem>} />
 
                     <Button type="submit" className="w-full bg-genedge-green hover:bg-genedge-green/90">
                       Send Message
@@ -191,8 +153,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Contact;
