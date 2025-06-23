@@ -52,7 +52,7 @@ const BusinessEPC = () => {
 
             {/* More Services (Commissioning & Regulatory) */}
             <div className="grid md:grid-cols-2 gap-6 mb-10">
-              <div className="flex items-start bg-gray-50 rounded-lg p-5">
+              <div className="text-center p-5 bg-gray-50 rounded-lg">
                 <div className="h-12 w-12 rounded-full bg-genedge-orange flex items-center justify-center text-white mr-4">
                   <Share2 className="w-6 h-6" />
                 </div>
