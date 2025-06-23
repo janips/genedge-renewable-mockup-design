@@ -6,7 +6,7 @@ const StatsSection: React.FC = () => {
     value: "350+",
     label: "MWp Solar Capacity"
   }, {
-    icon: <Wind className="h-10 w-10 text-genedge-green" />,
+    icon: <MapPin className="h-10 w-10 text-genedge-green" />,
     value: "16+",
     label: "Sites spread across Gujarat & Rajasthan"
   }, {
