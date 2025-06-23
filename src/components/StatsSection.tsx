@@ -7,11 +7,11 @@ const StatsSection: React.FC = () => {
     label: "MWp Solar Capacity"
   }, {
     icon: <Wind className="h-10 w-10 text-genedge-green" />,
-    value: "25+",
-    label: "MW spread across Gujarat & Rajasthan"
+    value: "16+",
+    label: "Sites spread across Gujarat & Rajasthan"
   }, {
     icon: <Users className="h-10 w-10 text-blue-500" />,
-    value: "50+",
+    value: "",
     label: "Superior Eng. & Construction Management"
   }, {
     icon: <Award className="h-10 w-10 text-purple-500" />,
