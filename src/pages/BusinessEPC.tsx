@@ -53,7 +53,7 @@ const BusinessEPC = () => {
             {/* More Services (Commissioning & Regulatory) */}
             <div className="grid md:grid-cols-2 gap-6 mb-10">
               <div className="text-center p-5 bg-gray-50 rounded-lg">
-                <div className="mx-auto h-16 w-16 rounded-full bg-genedge-orange flex items-center justify-center text-white mr-4">
+                <div className="mx-auto h-16 w-16 rounded-full bg-genedge-orange flex items-center justify-center text-white mb-4">
                   <Share2 className="w-7 h-7" />
                 </div>
                 <div>
@@ -63,6 +63,7 @@ const BusinessEPC = () => {
                   </p>
                 </div>
               </div>
+              
               <div className="flex items-start bg-gray-50 rounded-lg p-5">
                 <div className="h-12 w-12 rounded-full bg-genedge-green flex items-center justify-center text-white mr-4">
                   <ShieldCheck className="w-6 h-6" />
