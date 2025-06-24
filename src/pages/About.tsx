@@ -67,20 +67,7 @@ const About = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 className="text-xl font-bold text-genedge-green mb-2">Experience</h3>
-                <p className="text-gray-700">Years of expertise in renewable energy development</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 className="text-xl font-bold text-genedge-orange mb-2">Innovation</h3>
-                <p className="text-gray-700">Cutting-edge technology and sustainable solutions</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 className="text-xl font-bold text-genedge-green mb-2">Commitment</h3>
-                <p className="text-gray-700">Dedicated to India's clean energy future</p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
