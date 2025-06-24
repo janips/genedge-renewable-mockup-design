@@ -2,9 +2,15 @@ import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
 import { Linkedin } from 'lucide-react';
+
 const AboutTeam = () => {
-  return <Layout>
-      <PageBanner title="Management Team" subtitle="Leadership Driving Clean Energy Innovation" />
+  return (
+    <Layout>
+      <PageBanner 
+        title="Management Team" 
+        subtitle="Leadership Driving Clean Energy Innovation" 
+        backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+      />
       <div className="pt-8 pb-16 bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
@@ -79,6 +85,8 @@ His expertise covers procurement, contracts, supply chain development, business 
           </div>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default AboutTeam;
