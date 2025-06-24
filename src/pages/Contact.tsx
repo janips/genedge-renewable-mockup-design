@@ -27,8 +27,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Get in Touch</h1>
         </div>
-    </div>
-    <div className="pt-24 pb-16 bg-gray-50 py-[20px]">
+    
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <p className="text-lg text-gray-700 leading-relaxed">
