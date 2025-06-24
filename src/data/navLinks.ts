@@ -44,6 +44,5 @@ export const navLinks: NavLinkType[] = [
     ]
   },
   { title: "Corporate Governance", path: "/corporate-governance" },
-  { title: "Careers", path: "/careers" },
   { title: "Get in Touch", path: "/contact" }
 ];
