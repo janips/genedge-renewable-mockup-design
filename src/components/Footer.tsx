@@ -1,11 +1,8 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
-
 const Footer: React.FC = () => {
-  return (
-    <footer className="bg-gray-100 text-genedge-dark-gray pt-16 pb-8 py-[10px] border-t-4 border-genedge-green">
+  return <footer className="bg-gray-100 text-genedge-dark-gray pt-16 pb-8 py-[10px] border-t-4 border-genedge-green">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -13,7 +10,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="flex items-center mb-4">
               <img alt="Logo" className="h-16 w-auto md:h-20" src="/lovable-uploads/a49ec2e3-c70a-4e74-b6a9-e3cd0cccc919.png" />
             </Link>
-            <p className="text-genedge-dark-gray items-center mb-4 text-sm font-bold text-left">
+            <p className="text-genedge-dark-gray items-center mb-4 text-sm font-bold text-left px-[15px]">
               From the Ground Up,<br /> 
               Towards a Greener Future
             </p>
@@ -87,8 +84,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
