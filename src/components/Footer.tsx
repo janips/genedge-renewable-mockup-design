@@ -10,9 +10,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="flex items-center mb-4">
               <img alt="Logo" className="h-16 w-auto md:h-20" src="/lovable-uploads/a49ec2e3-c70a-4e74-b6a9-e3cd0cccc919.png" />
             </Link>
-            <p className="text-genedge-dark-gray mb-4 text-sm">
-              Empowering India through Clean Energy
-            </p>
+            <p className="text-genedge-dark-gray mb-4 text-sm font-bold">From the Ground Up, Towards a Greener Future</p>
           </div>
 
           {/* Contact Info */}
