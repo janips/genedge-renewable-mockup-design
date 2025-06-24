@@ -22,15 +22,6 @@ const RenewablePolicies = () => {
               India’s renewable energy ecosystem is underpinned by a robust and evolving policy framework. With ambitious targets such as achieving 500 GW of non-fossil capacity by 2030, the sector is positioned to drive long-term sustainability, attract private investment, and establish India as a global clean energy leader.
             </p>
             <div className="space-y-6">
-              
-              
-              
-              
-              
-              
-              
-              
-              
             </div>
           </div>
         </div>
