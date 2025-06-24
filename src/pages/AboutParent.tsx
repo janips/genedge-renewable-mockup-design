@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
 const AboutParent = () => {
   return <Layout>
-      <PageBanner title="Parent Company" subtitle="Enertech Energy Resources Private Limited" backgroundImage="https://images.unsplash.com/photo-1518737801142-6a0a18af7e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
+      <PageBanner title="Parent Company" subtitle="Enertech Energy Resources Private Limited" backgroundImage="" />
       <div className="pt-8 pb-16 bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
