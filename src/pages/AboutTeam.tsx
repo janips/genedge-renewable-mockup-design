@@ -6,13 +6,12 @@ import { Linkedin } from 'lucide-react';
 const AboutTeam = () => {
   return (
     <Layout>
-      <PageBanner 
-        title="Management Team" 
-        subtitle="Leadership Driving Clean Energy Innovation" 
-        backgroundImage=""
-      />
-      <div className="pt-8 pb-16 bg-gray-50 py-0">
+      <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-bold text-center mb-8">Management Team</h1>
+          
+          <p className="text-xl md:text-2xl text-center opacity-90 text-gray-800">Leadership Driving Clean Energy Innovation</p>
+          
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
             <p className="mb-6 text-gray-700">
               Our leadership team brings decades of experience in renewable energy, project development, and sustainable business practices.
