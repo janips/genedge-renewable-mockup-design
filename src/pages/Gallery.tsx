@@ -1,8 +1,8 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 // Images for Devki Galol project
 const devkiGalolImages = [
@@ -165,6 +165,30 @@ const mendaparaImages = [
 ];
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
+  const handleImageClick = (img: { src: string; alt: string }) => {
+    setSelectedImage(img);
+  };
+
+  const ImageCard = ({ img, index }: { img: { src: string; alt: string }; index: number }) => (
+    <div 
+      key={index} 
+      className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white cursor-pointer"
+      onClick={() => handleImageClick(img)}
+    >
+      <img 
+        src={img.src} 
+        alt={img.alt} 
+        loading="lazy" 
+        className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
+      />
+      <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+        <p className="text-white text-sm text-center px-4">{img.alt}</p>
+      </div>
+    </div>
+  );
+
   return (
     <Layout>
       <PageBanner 
@@ -213,17 +237,7 @@ const Gallery = () => {
                 <TabsContent value="devki-galol" className="mt-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                     {devkiGalolImages.map((img, i) => (
-                      <div key={i} className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white">
-                        <img 
-                          src={img.src} 
-                          alt={img.alt} 
-                          loading="lazy" 
-                          className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
-                        />
-                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <p className="text-white text-sm text-center px-4">{img.alt}</p>
-                        </div>
-                      </div>
+                      <ImageCard key={i} img={img} index={i} />
                     ))}
                   </div>
                 </TabsContent>
@@ -231,17 +245,7 @@ const Gallery = () => {
                 <TabsContent value="kanja" className="mt-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                     {kanjaImages.map((img, i) => (
-                      <div key={i} className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white">
-                        <img 
-                          src={img.src} 
-                          alt={img.alt} 
-                          loading="lazy" 
-                          className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
-                        />
-                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <p className="text-white text-sm text-center px-4">{img.alt}</p>
-                        </div>
-                      </div>
+                      <ImageCard key={i} img={img} index={i} />
                     ))}
                   </div>
                 </TabsContent>
@@ -249,17 +253,7 @@ const Gallery = () => {
                 <TabsContent value="mandodara" className="mt-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                     {mandodaraImages.map((img, i) => (
-                      <div key={i} className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white">
-                        <img 
-                          src={img.src} 
-                          alt={img.alt} 
-                          loading="lazy" 
-                          className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
-                        />
-                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <p className="text-white text-sm text-center px-4">{img.alt}</p>
-                        </div>
-                      </div>
+                      <ImageCard key={i} img={img} index={i} />
                     ))}
                   </div>
                 </TabsContent>
@@ -267,17 +261,7 @@ const Gallery = () => {
                 <TabsContent value="mendapara" className="mt-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                     {mendaparaImages.map((img, i) => (
-                      <div key={i} className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white">
-                        <img 
-                          src={img.src} 
-                          alt={img.alt} 
-                          loading="lazy" 
-                          className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
-                        />
-                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <p className="text-white text-sm text-center px-4">{img.alt}</p>
-                        </div>
-                      </div>
+                      <ImageCard key={i} img={img} index={i} />
                     ))}
                   </div>
                 </TabsContent>
@@ -286,6 +270,24 @@ const Gallery = () => {
           </div>
         </div>
       </div>
+
+      {/* Image Zoom Modal */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-4xl w-full p-0 overflow-hidden">
+          {selectedImage && (
+            <div className="relative">
+              <img 
+                src={selectedImage.src} 
+                alt={selectedImage.alt}
+                className="w-full h-auto max-h-[80vh] object-contain"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4">
+                <p className="text-sm text-center">{selectedImage.alt}</p>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </Layout>
   );
 };
