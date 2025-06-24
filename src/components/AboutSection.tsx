@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
     label: "BESS Solutions"
   }, {
     icon: <Activity className="h-8 w-8 text-purple-500" />,
-    label: "EPC Services"
+    label: "Wind & Solar Hybrid Projects"
   }];
   return <section className="bg-genedge-light-gray py-0">
       <div className="container mx-auto px-4 py-[30px]">
