@@ -40,6 +40,50 @@ const devkiGalolImages = [
   }
 ];
 
+// Images for Kanja project
+const kanjaImages = [
+  {
+    src: "/lovable-uploads/1ac8b543-79ef-4350-b615-7349dbd79a66.png",
+    alt: "Kanja - Aerial view of solar installation with landscape"
+  },
+  {
+    src: "/lovable-uploads/3a14f0c0-88fe-48d0-addf-925b4e58237a.png",
+    alt: "Kanja - Solar field with electrical infrastructure and control systems"
+  },
+  {
+    src: "/lovable-uploads/aab96177-158a-4247-b864-e91372e0dda1.png",
+    alt: "Kanja - Large-scale solar farm with organized panel arrangement"
+  },
+  {
+    src: "/lovable-uploads/636f6cbd-f874-4a11-ad4d-149f893348af.png",
+    alt: "Kanja - Solar installation with transmission tower and monitoring equipment"
+  },
+  {
+    src: "/lovable-uploads/e914f0b4-a57e-480f-9deb-52914f01457a.png",
+    alt: "Kanja - Aerial view of dual solar installations in agricultural setting"
+  },
+  {
+    src: "/lovable-uploads/fa25af84-b198-47c4-9b42-46b8303bf401.png",
+    alt: "Kanja - Construction workers installing solar panel mounting structures"
+  },
+  {
+    src: "/lovable-uploads/68046839-d551-4a31-a5a4-2fb3e6bd0dd1.png",
+    alt: "Kanja - Heavy electrical equipment and transformer installation"
+  },
+  {
+    src: "/lovable-uploads/5f63d327-97be-48b1-b7d2-51c5e375dda2.png",
+    alt: "Kanja - Workers performing maintenance on solar panel installation"
+  },
+  {
+    src: "/lovable-uploads/b1dc59d0-8b79-445d-b491-ddad95cb4882.png",
+    alt: "Kanja - Ground preparation and foundation work for solar panels"
+  },
+  {
+    src: "/lovable-uploads/181e0207-17b9-4563-8baf-8fc0e785b47c.png",
+    alt: "Kanja - Construction team assembling solar panel mounting frameworks"
+  }
+];
+
 const Gallery = () => {
   return (
     <Layout>
@@ -59,11 +103,31 @@ const Gallery = () => {
             
             <div className="bg-white rounded-lg shadow-md p-6">
               <Tabs defaultValue="devki-galol" className="w-full">
-                <TabsList className="grid w-full grid-cols-4">
-                  <TabsTrigger value="devki-galol">Devki Galol</TabsTrigger>
-                  <TabsTrigger value="kanja">Kanja</TabsTrigger>
-                  <TabsTrigger value="mandodara">Mandodara</TabsTrigger>
-                  <TabsTrigger value="mendapara">Mendapara</TabsTrigger>
+                <TabsList className="grid w-full grid-cols-4 bg-gray-100">
+                  <TabsTrigger 
+                    value="devki-galol" 
+                    className="data-[state=active]:bg-genedge-green data-[state=active]:text-white hover:bg-genedge-orange hover:text-white transition-colors"
+                  >
+                    Devki Galol
+                  </TabsTrigger>
+                  <TabsTrigger 
+                    value="kanja"
+                    className="data-[state=active]:bg-genedge-green data-[state=active]:text-white hover:bg-genedge-orange hover:text-white transition-colors"
+                  >
+                    Kanja
+                  </TabsTrigger>
+                  <TabsTrigger 
+                    value="mandodara"
+                    className="data-[state=active]:bg-genedge-green data-[state=active]:text-white hover:bg-genedge-orange hover:text-white transition-colors"
+                  >
+                    Mandodara
+                  </TabsTrigger>
+                  <TabsTrigger 
+                    value="mendapara"
+                    className="data-[state=active]:bg-genedge-green data-[state=active]:text-white hover:bg-genedge-orange hover:text-white transition-colors"
+                  >
+                    Mendapara
+                  </TabsTrigger>
                 </TabsList>
                 
                 <TabsContent value="devki-galol" className="mt-6">
@@ -85,8 +149,20 @@ const Gallery = () => {
                 </TabsContent>
                 
                 <TabsContent value="kanja" className="mt-6">
-                  <div className="text-center py-16">
-                    <p className="text-gray-500 text-lg">Coming Soon - Kanja Project Images</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+                    {kanjaImages.map((img, i) => (
+                      <div key={i} className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white">
+                        <img 
+                          src={img.src} 
+                          alt={img.alt} 
+                          loading="lazy" 
+                          className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
+                        />
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <p className="text-white text-sm text-center px-4">{img.alt}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </TabsContent>
                 
