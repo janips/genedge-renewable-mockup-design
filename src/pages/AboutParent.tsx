@@ -7,8 +7,6 @@ const AboutParent = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Parent Company</h1>
           
-          <p className="text-xl md:text-2xl opacity-90 text-gray-800">Enertech Energy Resources Private Limited</p>
-          
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">            
             <p className="mb-6 text-gray-700 text-justify">
               Enertech Energy Resources Private Limited, ("EERPL"), formerly known as Enertech Fuel Solutions Private Limited, offers complete solutions in Natural Gas Sourcing, Contract Management, Formulation and Management of Gas Sales Agreement (GSA) & Gas Transmission Agreement (GTA), Regulatory Affairs Management, DFR Preparation, Project Financing, setting up City Gas Distribution (CGD) Network etc.
