@@ -128,6 +128,42 @@ const mandodaraImages = [
   }
 ];
 
+// Images for Mendapara project
+const mendaparaImages = [
+  {
+    src: "/lovable-uploads/63c5794f-39a4-4f7e-98ae-c6369568c6b6.png",
+    alt: "Mendapara - Aerial view of solar farm installation in agricultural landscape"
+  },
+  {
+    src: "/lovable-uploads/f2447aff-ac1c-4331-ba9d-7ef419c5ed30.png",
+    alt: "Mendapara - Large-scale solar array with systematic panel arrangement"
+  },
+  {
+    src: "/lovable-uploads/b9891d1c-414b-4139-8cf3-d08f4b6d75ad.png",
+    alt: "Mendapara - Solar installation overview with surrounding agricultural fields"
+  },
+  {
+    src: "/lovable-uploads/0ca53fcd-4425-4c4e-8ba6-01ef4c7ff4e0.png",
+    alt: "Mendapara - Project perimeter fencing at sunset"
+  },
+  {
+    src: "/lovable-uploads/ad1e95b2-480f-4888-9a4f-242b35d68fed.png",
+    alt: "Mendapara - Team survey and site preparation with mountain backdrop"
+  },
+  {
+    src: "/lovable-uploads/3ef6f9ee-f851-4f20-94dc-bcb22ae087bb.png",
+    alt: "Mendapara - Agricultural landscape and project site preparation"
+  },
+  {
+    src: "/lovable-uploads/6b3464ec-c00b-4500-8c0f-3ffd913d0ca9.png",
+    alt: "Mendapara - Foundation and concrete reinforcement work"
+  },
+  {
+    src: "/lovable-uploads/47703f98-a03b-444b-9568-6cb930884e2d.png",
+    alt: "Mendapara - Solar panel mounting structure installation and assembly"
+  }
+];
+
 const Gallery = () => {
   return (
     <Layout>
@@ -229,8 +265,20 @@ const Gallery = () => {
                 </TabsContent>
                 
                 <TabsContent value="mendapara" className="mt-6">
-                  <div className="text-center py-16">
-                    <p className="text-gray-500 text-lg">Coming Soon - Mendapara Project Images</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+                    {mendaparaImages.map((img, i) => (
+                      <div key={i} className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white">
+                        <img 
+                          src={img.src} 
+                          alt={img.alt} 
+                          loading="lazy" 
+                          className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
+                        />
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <p className="text-white text-sm text-center px-4">{img.alt}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </TabsContent>
               </Tabs>
