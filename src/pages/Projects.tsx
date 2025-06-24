@@ -103,7 +103,7 @@ const Projects = () => {
       loi: "Yes",
       loa: "Yes",
       ppa: "Yes",
-      status: "Under Development"
+      status: "Under Construction"
     },
     {
       id: 9,
@@ -115,7 +115,7 @@ const Projects = () => {
       loi: "Yes",
       loa: "Yes",
       ppa: "Yes",
-      status: "Under Development"
+      status: "Under Construction"
     },
     {
       id: 10,
@@ -127,7 +127,7 @@ const Projects = () => {
       loi: "Yes",
       loa: "Yes",
       ppa: "Yes",
-      status: "Under Development"
+      status: "Under Construction"
     },
     {
       id: 11,
@@ -139,7 +139,7 @@ const Projects = () => {
       loi: "Yes",
       loa: "Yes",
       ppa: "Yes",
-      status: "Under Development"
+      status: "Under Construction"
     },
     {
       id: 12,
