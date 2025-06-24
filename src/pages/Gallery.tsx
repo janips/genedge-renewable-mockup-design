@@ -84,6 +84,50 @@ const kanjaImages = [
   }
 ];
 
+// Images for Mandodara project
+const mandodaraImages = [
+  {
+    src: "/lovable-uploads/5916dabc-1c45-4c66-9c47-6d15451c706a.png",
+    alt: "Mandodara - Aerial view of solar farm installation in agricultural landscape"
+  },
+  {
+    src: "/lovable-uploads/3852c6f0-13ab-4119-a57a-455d6a45d869.png",
+    alt: "Mandodara - Large-scale solar array with systematic panel arrangement"
+  },
+  {
+    src: "/lovable-uploads/894f950a-32d2-4474-a482-de37fca44b5f.png",
+    alt: "Mandodara - Project site landscape with green fields and infrastructure"
+  },
+  {
+    src: "/lovable-uploads/78bc16de-e2b9-4e07-9e48-47caa558e4a4.png",
+    alt: "Mandodara - Control panel and electrical monitoring systems"
+  },
+  {
+    src: "/lovable-uploads/956f0b0e-86d5-471f-bbd2-d438304e3256.png",
+    alt: "Mandodara - Solar panel mounting structure during construction phase"
+  },
+  {
+    src: "/lovable-uploads/a77e0aeb-5157-4b93-80e8-707bdb15da46.png",
+    alt: "Mandodara - Construction materials and equipment preparation"
+  },
+  {
+    src: "/lovable-uploads/3636a1f3-8b4f-428b-aba6-44e035969b5a.png",
+    alt: "Mandodara - Electrical substation with power transmission infrastructure"
+  },
+  {
+    src: "/lovable-uploads/298d7d8c-df9b-48be-a15d-cbfaa65eaf47.png",
+    alt: "Mandodara - Foundation work and ground preparation for solar installation"
+  },
+  {
+    src: "/lovable-uploads/52a6746f-0e2d-4657-866b-4f7322a80f80.png",
+    alt: "Mandodara - Solar panel foundation and mounting structure installation"
+  },
+  {
+    src: "/lovable-uploads/11085c0e-ef8a-4d6c-9446-d5a255074431.png",
+    alt: "Mandodara - Workers installing solar panels on mounting structures"
+  }
+];
+
 const Gallery = () => {
   return (
     <Layout>
@@ -167,8 +211,20 @@ const Gallery = () => {
                 </TabsContent>
                 
                 <TabsContent value="mandodara" className="mt-6">
-                  <div className="text-center py-16">
-                    <p className="text-gray-500 text-lg">Coming Soon - Mandodara Project Images</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+                    {mandodaraImages.map((img, i) => (
+                      <div key={i} className="group relative rounded-xl overflow-hidden shadow transition hover:shadow-xl bg-white">
+                        <img 
+                          src={img.src} 
+                          alt={img.alt} 
+                          loading="lazy" 
+                          className="w-full h-72 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
+                        />
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <p className="text-white text-sm text-center px-4">{img.alt}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </TabsContent>
                 
