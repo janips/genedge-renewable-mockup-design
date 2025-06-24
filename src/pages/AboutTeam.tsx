@@ -4,7 +4,7 @@ import PageBanner from '../components/PageBanner';
 import { Linkedin } from 'lucide-react';
 const AboutTeam = () => {
   return <Layout>
-      <PageBanner title="Management Team" subtitle="Leadership Driving Clean Energy Innovation"/>
+      <PageBanner title="Management Team" subtitle="Leadership Driving Clean Energy Innovation" />
       <div className="pt-8 pb-16 bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
