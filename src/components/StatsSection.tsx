@@ -11,12 +11,12 @@ const StatsSection: React.FC = () => {
     label: "Sites spread across Gujarat & Rajasthan"
   }, {
     icon: <Users className="h-10 w-10 text-blue-500" />,
-    value: "",
-    label: "Superior Eng. & Construction Management"
+    value: "35+",
+    label: "Years of Superior Eng. & Construction Management Experience."
   }, {
     icon: <Award className="h-10 w-10 text-purple-500" />,
     value: "1 GW+",
-    label: "Diversified Portfolio"
+    label: "Targeted Diversified Portfolio"
   }];
   return <section className="bg-white py-[20px]">
       <div className="container mx-auto px-4">
