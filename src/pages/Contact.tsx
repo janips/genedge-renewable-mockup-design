@@ -24,7 +24,7 @@ const Contact = () => {
   };
   return <Layout>
       <PageBanner title="Get in Touch" subtitle="Join us in shaping a greener, more sustainable future" backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" />
-      <div className="pt-24 pb-16 bg-gray-50 py-[30px]">
+      <div className="pt-24 pb-16 bg-gray-50 py-[20px]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <p className="text-lg text-gray-700 leading-relaxed">
