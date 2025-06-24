@@ -9,7 +9,7 @@ const AboutTeam = () => {
       <PageBanner 
         title="Management Team" 
         subtitle="Leadership Driving Clean Energy Innovation" 
-        backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundImage=""
       />
       <div className="pt-8 pb-16 bg-gray-50 py-0">
         <div className="container mx-auto px-4">
