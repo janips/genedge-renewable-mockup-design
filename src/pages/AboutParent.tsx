@@ -23,7 +23,7 @@ const AboutParent = () => {
             </p>
 
             <p className="mb-6 text-gray-700">
-              More details can be found at <a className="underline" href="https://www.enertechfuelsolutions.com/" target="_blank" rel="noopener noreferrer">www.enertechfuelsolutions.com</a>
+              More details can be found at <a className="underline" href="https//www.enertechenergy.in/" target="_blank" rel="noopener noreferrer">www.enertechenergy.in</a>
             </p>
           </div>
         </div>
