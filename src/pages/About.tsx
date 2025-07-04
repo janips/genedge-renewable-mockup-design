@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
 const About = () => {
   return <Layout>
-      <PageBanner title="Company" subtitle="Leading India's Clean Energy Revolution" backgroundImage="/lovable-uploads/e1eb5f69-db62-43ca-9eec-f3677f7858fd.png" textAlign="left" />
+      <PageBanner title="Company" subtitle="Leading India's Clean Energy Revolution" backgroundImage="/lovable-uploads/9da473a8-7deb-411f-9e56-abedb37b90bf.png" textAlign="left" />
       <div className="bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           {/* Company Overview - Moved to top */}

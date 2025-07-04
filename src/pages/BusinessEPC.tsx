@@ -4,7 +4,7 @@ import PageBanner from '../components/PageBanner';
 import { Wrench, PenTool, ShoppingCart, Hammer, Share2, ShieldCheck } from 'lucide-react';
 const BusinessEPC = () => {
   return <Layout>
-      <PageBanner title="EPC Business" subtitle="Building Excellence in Renewable Infrastructure" backgroundImage="/lovable-uploads/d0c17a4b-0e78-4e4a-8824-187739ea7853.png" />
+      <PageBanner title="EPC Business" subtitle="Building Excellence in Renewable Infrastructure" backgroundImage="/lovable-uploads/47eeae7b-0a59-4adb-ad5a-bc225de21aa5.png" />
       <div className="pt-8 pb-16 bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">

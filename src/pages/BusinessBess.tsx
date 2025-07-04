@@ -4,7 +4,7 @@ import PageBanner from '../components/PageBanner';
 import { Battery } from 'lucide-react';
 const BusinessBess = () => {
   return <Layout>
-      <PageBanner title="Battery Energy Storage Systems" subtitle="Storing Power. Strengthening the Grid" backgroundImage="/lovable-uploads/c97d7f85-4ae7-4ef5-bef5-c4c7a489f055.png" />
+      <PageBanner title="Battery Energy Storage Systems" subtitle="Storing Power. Strengthening the Grid" backgroundImage="/lovable-uploads/6f81ef8d-0fd2-41a6-8cfe-5237abf4ab48.png" />
       <div className="pt-8 pb-16 bg-gray-50 py-0">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">

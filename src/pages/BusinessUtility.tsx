@@ -9,7 +9,7 @@ const BusinessUtility = () => {
       <PageBanner 
         title="Utility Scale Projects"
         subtitle="Powering the Grid. Supporting National Goals"
-        backgroundImage="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        backgroundImage="/lovable-uploads/43d0cbfc-b8a7-4933-84ba-1bf12f1c60a1.png"
       />
       <div className="pt-8 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
