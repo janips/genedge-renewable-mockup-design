@@ -1,4 +1,3 @@
-
 import React from 'react';
 interface PageBannerProps {
   title: string;
@@ -22,12 +21,10 @@ const PageBanner: React.FC<PageBannerProps> = ({
   return <div className={`relative ${height} bg-cover bg-center bg-no-repeat flex items-center ${alignmentClasses[textAlign]}`} style={{
     backgroundImage: `url(${backgroundImage})`
   }}>
-      <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      <div className="absolute inset-0 bg-transparent"></div>
       <div className="relative z-10 text-white px-4 max-w-4xl mx-auto w-full">
-        <div className="bg-black bg-opacity-50 rounded-lg p-6 backdrop-blur-sm">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">{title}</h1>
-          {subtitle && <p className="text-xl md:text-2xl opacity-90 text-white">{subtitle}</p>}
-        </div>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">{title}</h1>
+        {subtitle && <p className="text-xl md:text-2xl opacity-70 text-gray-800">{subtitle}</p>}
       </div>
     </div>;
 };
