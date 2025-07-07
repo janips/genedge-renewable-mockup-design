@@ -1,7 +1,17 @@
+
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+
 const VisionMission = () => {
-  return <Layout>
+  return (
+    <Layout>
+      <SEO 
+        title="Vision & Mission" 
+        description="Our vision is to be a significant contributor in the national transition towards a sustainable future. Our mission is to scale up our renewable energy project pipeline to 1 GW by 2027."
+        keywords="vision, mission, renewable energy, sustainable future, clean energy goals, India"
+        url="/about/vision-mission"
+      />
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Vision & Mission</h1>
@@ -40,6 +50,8 @@ const VisionMission = () => {
           </div>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default VisionMission;

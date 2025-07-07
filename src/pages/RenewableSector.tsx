@@ -1,11 +1,18 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 
 const RenewableSector = () => {
   return (
     <Layout>
+      <SEO 
+        title="Renewable Sector in India" 
+        description="Learn about India's renewable energy sector growth, key policies, capacity additions, government targets, and development processes driving the clean energy transition."
+        keywords="renewable sector India, clean energy policies, renewable capacity, government targets, solar wind energy"
+        url="/renewable-sector"
+      />
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Renewable Sector in India</h1>

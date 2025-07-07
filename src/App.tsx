@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import ScrollToTop from "./components/ScrollToTop";
 
 // Pages
@@ -39,42 +40,44 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/about/vision-mission" element={<VisionMission />} />
-          <Route path="/about/who-we-are" element={<WhoWeAre />} />
-          <Route path="/about/team" element={<AboutTeam />} />
-          <Route path="/about/parent" element={<AboutParent />} />
-          <Route path="/renewable-sector" element={<RenewableSector />} />
-          <Route path="/renewable-sector/policies" element={<RenewablePolicies />} />
-          <Route path="/renewable-sector/capacity" element={<RenewableCapacity />} />
-          <Route path="/renewable-sector/targets" element={<RenewableTargets />} />
-          <Route path="/renewable-sector/process" element={<RenewableProcess />} />
-          <Route path="/businesses" element={<Businesses />} />
-          <Route path="/businesses/kusum" element={<BusinessKusum />} />
-          <Route path="/businesses/utility" element={<BusinessUtility />} />
-          <Route path="/businesses/commercial" element={<BusinessCommercial />} />
-          <Route path="/businesses/bess" element={<BusinessBess />} />
-          <Route path="/businesses/epc" element={<BusinessEPC />} />
-          <Route path="/businesses/om" element={<BusinessOM />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/map" element={<ProjectMap />} />
-          <Route path="/corporate-governance" element={<CorporateGovernance />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms" element={<Terms />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <HelmetProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/about/vision-mission" element={<VisionMission />} />
+            <Route path="/about/who-we-are" element={<WhoWeAre />} />
+            <Route path="/about/team" element={<AboutTeam />} />
+            <Route path="/about/parent" element={<AboutParent />} />
+            <Route path="/renewable-sector" element={<RenewableSector />} />
+            <Route path="/renewable-sector/policies" element={<RenewablePolicies />} />
+            <Route path="/renewable-sector/capacity" element={<RenewableCapacity />} />
+            <Route path="/renewable-sector/targets" element={<RenewableTargets />} />
+            <Route path="/renewable-sector/process" element={<RenewableProcess />} />
+            <Route path="/businesses" element={<Businesses />} />
+            <Route path="/businesses/kusum" element={<BusinessKusum />} />
+            <Route path="/businesses/utility" element={<BusinessUtility />} />
+            <Route path="/businesses/commercial" element={<BusinessCommercial />} />
+            <Route path="/businesses/bess" element={<BusinessBess />} />
+            <Route path="/businesses/epc" element={<BusinessEPC />} />
+            <Route path="/businesses/om" element={<BusinessOM />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/map" element={<ProjectMap />} />
+            <Route path="/corporate-governance" element={<CorporateGovernance />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </HelmetProvider>
   </QueryClientProvider>
 );
 

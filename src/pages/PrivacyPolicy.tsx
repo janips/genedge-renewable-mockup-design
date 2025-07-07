@@ -1,10 +1,17 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const PrivacyPolicy = () => {
   return (
     <Layout>
+      <SEO 
+        title="Privacy Policy" 
+        description="Learn about how Genedge Renewables collects, uses, and protects your personal information. Read our comprehensive privacy policy and data protection practices."
+        keywords="privacy policy, data protection, personal information, privacy practices, Genedge Renewables"
+        url="/privacy-policy"
+      />
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">

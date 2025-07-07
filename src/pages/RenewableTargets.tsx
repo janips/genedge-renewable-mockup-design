@@ -1,7 +1,17 @@
+
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+
 const RenewableTargets = () => {
-  return <Layout>
+  return (
+    <Layout>
+      <SEO 
+        title="Government Renewable Energy Targets" 
+        description="India's ambitious renewable energy targets: 500 GW non-fossil fuel capacity by 2030, 50% clean electricity share, and net-zero emissions by 2070."
+        keywords="India renewable targets, 500 GW target, net zero 2070, clean energy goals, government policy"
+        url="/renewable-sector/targets"
+      />
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Targets by the Government of India</h1>
@@ -40,6 +50,8 @@ const RenewableTargets = () => {
           </div>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default RenewableTargets;

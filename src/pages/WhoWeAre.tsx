@@ -1,7 +1,17 @@
+
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+
 const WhoWeAre = () => {
-  return <Layout>
+  return (
+    <Layout>
+      <SEO 
+        title="Who We Are - Our Team and Expertise" 
+        description="Meet our team of engineers, developers, and energy experts passionate about reshaping India's power future with extensive renewable energy experience."
+        keywords="renewable energy team, energy experts, engineers, developers, India power future, clean energy professionals"
+        url="/about/who-we-are"
+      />
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Who Are We</h1>
@@ -45,6 +55,8 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-    </Layout>;
+    </Layout>
+  );
 };
+
 export default WhoWeAre;

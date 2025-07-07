@@ -1,11 +1,18 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import ProjectMapInteractive from '../components/ProjectMapInteractive';
 
 const ProjectMap = () => {
   return (
     <Layout>
+      <SEO 
+        title="Project Map - Our Renewable Energy Projects" 
+        description="Explore Genedge Renewables' solar and wind projects across India. View our commissioned and under-development projects in Gujarat, Rajasthan, and other states."
+        keywords="renewable energy projects, solar projects India, wind projects, Gujarat projects, Rajasthan projects, project map"
+        url="/projects/map"
+      />
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Project Map</h1>

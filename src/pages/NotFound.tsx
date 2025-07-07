@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 import { ArrowLeft } from "lucide-react";
 
 const NotFound = () => {
@@ -18,6 +19,12 @@ const NotFound = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Page Not Found - 404 Error" 
+        description="The page you're looking for cannot be found. Return to Genedge Renewables homepage to explore our renewable energy solutions and services."
+        keywords="404 error, page not found, Genedge Renewables"
+        url={location.pathname}
+      />
       <div className="min-h-[70vh] flex items-center justify-center bg-genedge-light-gray">
         <div className="text-center px-4">
           <div className="inline-block p-6 bg-white rounded-full shadow-md mb-6">

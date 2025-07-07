@@ -1,10 +1,17 @@
 
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const Terms = () => {
   return (
     <Layout>
+      <SEO 
+        title="Terms of Service" 
+        description="Read the terms of service for Genedge Renewables website and services. Learn about our usage policies, intellectual property rights, and legal terms."
+        keywords="terms of service, legal terms, website terms, service agreement, Genedge Renewables"
+        url="/terms"
+      />
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
