@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img alt="Logo" className="h-16 w-auto md:h-20" src="/lovable-uploads/03acf249-0ad5-4a39-aa7a-117c4bae3933.png" />
+              <img alt="Logo" className="h-16 w-auto md:h-20" src="/lovable-uploads/5f527f8a-2f7c-41b1-9545-7b7ec57c7ace.png" />
             </Link>
             <p className="text-genedge-dark-gray items-center mb-4 text-sm font-bold text-left px-[15px]">
               From the Ground Up, 
