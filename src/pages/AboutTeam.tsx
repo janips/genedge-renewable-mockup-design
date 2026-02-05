@@ -2,10 +2,8 @@ import React from 'react';
 import Layout from '../components/Layout';
 import PageBanner from '../components/PageBanner';
 import { Linkedin } from 'lucide-react';
-
 const AboutTeam = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="pt-24 pb-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-8">Management Team</h1>
@@ -39,35 +37,17 @@ Beyond the gas sector, his keen interests are in the Renewable energy space as w
                 <p className="text-gray-700 text-justify">Mr. Badri Mahapatra is a Management Graduate from Symbiosis Institute of Management, Pune and has over 28 years of experience across private sector firms, public sector / government organizations, academic institutions and industry networks. He was handling strategic and key positions in Gujarat Infrastructure Development Board (GIDB) and Gujarat Venture Finance Limited. As an entrepreneur, Mr. Mahapatra has mentored several companies in various areas such as Management Consultancy, Entry Advisory, Micro Finance, Natural Gas Consultancy, Trading and Manufacturing. He has also served as Executive Director at TiE (The Indus Entrepreneurs) Gujarat Chapter to promote and facilitate the entrepreneurship aspects in the State of Gujarat.</p>
               </div>
               
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-xl font-semibold">Sunil Sancheti</h3>
-                  <a href="https://linkedin.com/in/sunil-sancheti-80a82016" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
-                    <Linkedin size={24} />
-                  </a>
-                </div>
-                
-                <p className="text-gray-700 text-justify">Mr. Sunil Sancheti, a graduate in Electronics & Communication Engineering with an MBA in Finance, brings over 11 years of diverse experience across both private and government sectors. He has held key positions at prominent organizations such as GSPL India Gasnet Limited, Adani Green Energy Limited, and EDF Renewables India Pvt. Ltd. 
-
-
-Sunil specializes in project finance and fund-raising for large-scale infrastructure initiatives in the natural gas and renewable energy sectors. He has successfully led efforts to raise debt funding through banks and NBFCs, demonstrating a strong understanding of financial structuring, risk assessment, and stakeholder management in capital-intensive projects.</p>
-              </div>
+              
               
               <div className="bg-gray-50 p-6 rounded-lg">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-xl font-semibold">Ankit Chanpura</h3>
+                  <h3 className="text-xl font-semibold">Mr. Mitesh Trivedi</h3>
                   <a href="https://www.linkedin.com/in/ankit-chanpura-4400a426/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
                     <Linkedin size={24} />
                   </a>
                 </div>
                 
-                <p className="text-gray-700 text-justify">Mr. Ankit Chanpura, who holds a Bachelor's in Electrical Engineering and an MBA in Energy and infrastructure, brings over 16 years of diverse experience in the energy sector. 
-
-
-He has held key roles at leading organizations, including Adani Group, Torrent Power Limited, IL&FS Energy Development Company Ltd., and Piramal Glass Ltd. 
-
-
-His expertise covers procurement, contracts, supply chain development, business development, and project execution and management, particularly in the renewable energy space.</p>
+                <p className="text-gray-700 text-justify">Mr. Mitesh Trivedi, a Chartered Accountant, brings over 11 years of diverse experience across Large Infrastructure Companies. He has held key positions at prominent organizations such as Adani Enterprises Limited, Chiripal Poly Films Limited, and BDO India Services. Mitesh specializes in project finance and fund-raising for large-scale infrastructure initiatives in Manufacturing, Mining and and Renewable energy sectors. His expertise includes fund raising in capital-intensive projects, financial structuring, financial management and stakeholder management.</p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -84,8 +64,6 @@ His expertise covers procurement, contracts, supply chain development, business 
           </div>
         </div>
       </div>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default AboutTeam;
