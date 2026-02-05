@@ -3,7 +3,7 @@ import { Sun, Wind, Users, Award, MapPin } from 'lucide-react';
 const StatsSection: React.FC = () => {
   const stats = [{
     icon: <Sun className="h-10 w-10 text-genedge-orange" />,
-    value: "400",
+    value: "400+",
     label: "MWp Solar Capacity"
   }, {
     icon: <MapPin className="h-10 w-10 text-genedge-green" />,
