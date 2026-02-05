@@ -43,7 +43,7 @@ Beyond the gas sector, his keen interests are in the Renewable energy space as w
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-xl font-semibold">Mr. Mitesh Trivedi</h3>
                   <a href="https://www.linkedin.com/in/ankit-chanpura-4400a426/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">
-                    <Linkedin size={24} />
+                    
                   </a>
                 </div>
                 
