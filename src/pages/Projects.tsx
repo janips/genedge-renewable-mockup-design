@@ -7,205 +7,40 @@ import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('all');
 
-  // Updated project data per user table (16 projects)
+  // Updated project data per user table (27 projects)
   const projectsData = [
-    {
-      id: 1,
-      name: "Devki Galol",
-      state: "GJ",
-      mwac: 2,
-      mwp: 2.4,
-      discom: "PGVCL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Commissioned"
-    },
-    {
-      id: 2,
-      name: "Mendapara",
-      state: "GJ",
-      mwac: 2,
-      mwp: 2.4,
-      discom: "PGVCL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Commissioned"
-    },
-    {
-      id: 3,
-      name: "Mandodara",
-      state: "GJ",
-      mwac: 2,
-      mwp: 2.4,
-      discom: "PGVCL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Commissioned"
-    },
-    {
-      id: 4,
-      name: "Kanja",
-      state: "GJ",
-      mwac: 4,
-      mwp: 4.8,
-      discom: "PGVCL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Commissioned"
-    },
-    {
-      id: 5,
-      name: "Mandawri",
-      state: "RJ",
-      mwac: 2.25,
-      mwp: 2.25,
-      discom: "AVVNL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Under Construction"
-    },
-    {
-      id: 6,
-      name: "Jiva ka Kheda",
-      state: "RJ",
-      mwac: 2.54,
-      mwp: 2.54,
-      discom: "AVVNL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Under Construction"
-    },
-    {
-      id: 7,
-      name: "Sudri",
-      state: "RJ",
-      mwac: 2.33,
-      mwp: 2.33,
-      discom: "AVVNL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Under Construction"
-    },
-    {
-      id: 8,
-      name: "Sheradi",
-      state: "GJ",
-      mwac: 2,
-      mwp: 2.2,
-      discom: "PGVCL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Under Construction"
-    },
-    {
-      id: 9,
-      name: "Satapar",
-      state: "GJ",
-      mwac: 2,
-      mwp: 2.2,
-      discom: "PGVCL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Under Construction"
-    },
-    {
-      id: 10,
-      name: "Sarpdad",
-      state: "GJ",
-      mwac: 2,
-      mwp: 2.2,
-      discom: "PGVCL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Under Construction"
-    },
-    {
-      id: 11,
-      name: "Gokhlana",
-      state: "GJ",
-      mwac: 1.5,
-      mwp: 1.65,
-      discom: "PGVCL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Under Construction"
-    },
-    {
-      id: 12,
-      name: "GUVNL",
-      state: "GJ",
-      mwac: 243,
-      mwp: 340.2,
-      discom: "GUVNL",
-      loi: "Yes",
-      loa: "Yes",
-      ppa: "Yes",
-      status: "Under Development"
-    },
-    {
-      id: 13,
-      name: "Bhujela",
-      state: "RJ",
-      mwac: 2,
-      mwp: 2,
-      discom: "Jodhpur",
-      loi: "Yes",
-      loa: "Awaited",
-      ppa: "Awaited",
-      status: "Under Development"
-    },
-    {
-      id: 14,
-      name: "Bant",
-      state: "RJ",
-      mwac: 4,
-      mwp: 4,
-      discom: "Jodhpur",
-      loi: "Yes",
-      loa: "Awaited",
-      ppa: "Awaited",
-      status: "Under Development"
-    },
-    {
-      id: 15,
-      name: "Anadara",
-      state: "RJ",
-      mwac: 4,
-      mwp: 4,
-      discom: "Jodhpur",
-      loi: "Yes",
-      loa: "Awaited",
-      ppa: "Awaited",
-      status: "Under Development"
-    },
-    {
-      id: 16,
-      name: "Padiv",
-      state: "RJ",
-      mwac: 2,
-      mwp: 2,
-      discom: "Jodhpur",
-      loi: "Yes",
-      loa: "Awaited",
-      ppa: "Awaited",
-      status: "Under Development"
-    }
+    { id: 1, name: "Devki Galol", state: "GJ", mwac: 2, mwp: 2.4, discom: "PGVCL", ppa: "Yes", status: "Commissioned" },
+    { id: 2, name: "Mendapara", state: "GJ", mwac: 2, mwp: 2.4, discom: "PGVCL", ppa: "Yes", status: "Commissioned" },
+    { id: 3, name: "Mandodara", state: "GJ", mwac: 2, mwp: 2.4, discom: "PGVCL", ppa: "Yes", status: "Commissioned" },
+    { id: 4, name: "Kanja", state: "GJ", mwac: 4, mwp: 4.8, discom: "PGVCL", ppa: "Yes", status: "Commissioned" },
+    { id: 5, name: "Mandawri", state: "RJ", mwac: 2.25, mwp: 2.25, discom: "AVVNL", ppa: "Yes", status: "Commissioned" },
+    { id: 6, name: "Jiva ka Kheda", state: "RJ", mwac: 2.54, mwp: 2.74, discom: "AVVNL", ppa: "Yes", status: "Commissioned" },
+    { id: 7, name: "Sudri", state: "RJ", mwac: 2.33, mwp: 2.61, discom: "AVVNL", ppa: "Yes", status: "Commissioned" },
+    { id: 8, name: "GUVNL", state: "GJ", mwac: 243, mwp: 340.2, discom: "GUVNL", ppa: "Yes", status: "Under Development" },
+    { id: 9, name: "Bhujela", state: "RJ", mwac: 2, mwp: 2, discom: "Jodhpur", ppa: "Yes", status: "Under Construction" },
+    { id: 10, name: "Anadara", state: "RJ", mwac: 4, mwp: 4, discom: "Jodhpur", ppa: "Yes", status: "Under Construction" },
+    { id: 11, name: "Padeev", state: "RJ", mwac: 2, mwp: 2, discom: "Jodhpur", ppa: "Yes", status: "Under Construction" },
+    { id: 12, name: "Alwara", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 13, name: "Borwada", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 14, name: "Kauber", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 15, name: "Elana", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 16, name: "Bhadrai Pumping Station", state: "RJ", mwac: 1.5, mwp: 1.95, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 17, name: "Chorau lata", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 18, name: "Khaprol ki Dhani", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 19, name: "Otwara", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 20, name: "Sangana", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 21, name: "Veerana", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 22, name: "NCP- Dabli", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 23, name: "Dabli (Plant-1)", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 24, name: "Dabli (Plant-2)", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 25, name: "Mandar", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 26, name: "Harshwara", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" },
+    { id: 27, name: "Moruwara", state: "RJ", mwac: 2, mwp: 2.6, discom: "Jodhpur", ppa: "Yes", status: "Under Development" }
   ];
 
-  // Totals provided by user table
-  const totalMwac = 279.62;
-  const totalMwp = 379.57;
+  // Totals from spreadsheet
+  const totalMwac = 299.62;
+  const totalMwp = 408.74;
 
   return (
     <Layout>
@@ -234,8 +69,6 @@ const Projects = () => {
                     <TableHead>MWac</TableHead>
                     <TableHead>MWp</TableHead>
                     <TableHead>Discom</TableHead>
-                    <TableHead>LoI</TableHead>
-                    <TableHead>LoA</TableHead>
                     <TableHead>PPA</TableHead>
                     <TableHead>Status</TableHead>
                   </TableRow>
@@ -249,8 +82,6 @@ const Projects = () => {
                       <TableCell>{project.mwac}</TableCell>
                       <TableCell>{project.mwp}</TableCell>
                       <TableCell>{project.discom}</TableCell>
-                      <TableCell>{project.loi}</TableCell>
-                      <TableCell>{project.loa}</TableCell>
                       <TableCell>{project.ppa}</TableCell>
                       <TableCell>
                         <span className={`px-2 py-1 rounded-full text-xs font-medium ${
@@ -269,7 +100,7 @@ const Projects = () => {
                     <TableCell colSpan={3} className="text-right">Total:</TableCell>
                     <TableCell>{totalMwac}</TableCell>
                     <TableCell>{totalMwp}</TableCell>
-                    <TableCell colSpan={5}></TableCell>
+                    <TableCell colSpan={3}></TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
